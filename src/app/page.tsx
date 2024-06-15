@@ -1,7 +1,7 @@
 import Home from "./home/page";
 import About from "./about/page";
 import Products from "./products/page";
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
 
 // const Home = dynamic(() => import("./home/page"));
 // const About = dynamic(() => import("./about/page"));

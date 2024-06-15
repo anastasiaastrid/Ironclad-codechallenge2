@@ -34,7 +34,7 @@ export default async function HeroSection() {
                 <RichText document={heromap.fields.details} />
               </div>
               <div className="pt-4 lg:pt-7">
-                <Link className="px-4 py-2 bg-white font-bold text-black rounded" href="/about">
+                <Link className="px-4 py-2 bg-white font-bold text-black rounded" href="/products">
                   Shop Now
                 </Link>
               </div>
