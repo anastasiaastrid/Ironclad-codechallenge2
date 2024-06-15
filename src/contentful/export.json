@@ -1,0 +1,766 @@
+{
+  "contentTypes": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "02jhtpyaki6x"
+          }
+        },
+        "id": "blog",
+        "type": "ContentType",
+        "createdAt": "2024-06-15T07:48:39.119Z",
+        "updatedAt": "2024-06-15T16:41:42.053Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 9,
+        "publishedAt": "2024-06-15T16:41:42.053Z",
+        "firstPublishedAt": "2024-06-15T07:48:40.401Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0Ic5OmMDb05p3rtGYRcdP2"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0Ic5OmMDb05p3rtGYRcdP2"
+          }
+        },
+        "publishedCounter": 5,
+        "version": 10,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0Ic5OmMDb05p3rtGYRcdP2"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/02jhtpyaki6x/environments/master/content_types/blog"
+      },
+      "displayField": "title",
+      "name": "Blog",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "unique": true
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "slug",
+          "name": "Slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "unique": true
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "summary",
+          "name": "Summary",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "articleImage",
+          "name": "articleImage",
+          "type": "Link",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "details",
+          "name": "Details",
+          "type": "RichText",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "enabledMarks": [
+                "bold",
+                "italic",
+                "underline",
+                "code",
+                "superscript",
+                "subscript",
+                "strikethrough"
+              ],
+              "message": "Only bold, italic, underline, code, superscript, subscript, and strikethrough marks are allowed"
+            },
+            {
+              "enabledNodeTypes": [
+                "heading-1",
+                "heading-2",
+                "heading-3",
+                "heading-4",
+                "heading-5",
+                "heading-6",
+                "ordered-list",
+                "unordered-list",
+                "hr",
+                "blockquote",
+                "embedded-entry-block",
+                "embedded-asset-block",
+                "table",
+                "hyperlink",
+                "entry-hyperlink",
+                "asset-hyperlink",
+                "embedded-entry-inline"
+              ],
+              "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, table, link to Url, link to entry, link to asset, and inline entry nodes are allowed"
+            },
+            {
+              "nodes": {
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "author",
+          "name": "Author",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "createdAt",
+          "name": "createdAt",
+          "type": "Date",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "aboutText",
+          "name": "about-text",
+          "type": "RichText",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "enabledMarks": [
+                "bold",
+                "italic",
+                "underline",
+                "code",
+                "superscript",
+                "subscript",
+                "strikethrough"
+              ],
+              "message": "Only bold, italic, underline, code, superscript, subscript, and strikethrough marks are allowed"
+            },
+            {
+              "enabledNodeTypes": [
+                "heading-1",
+                "heading-2",
+                "heading-3",
+                "heading-4",
+                "heading-5",
+                "heading-6",
+                "ordered-list",
+                "unordered-list",
+                "hr",
+                "blockquote",
+                "embedded-entry-block",
+                "embedded-asset-block",
+                "table",
+                "hyperlink",
+                "entry-hyperlink",
+                "asset-hyperlink",
+                "embedded-entry-inline"
+              ],
+              "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, table, link to Url, link to entry, link to asset, and inline entry nodes are allowed"
+            },
+            {
+              "nodes": {
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    }
+  ],
+  "tags": [
+  ],
+  "editorInterfaces": [
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "02jhtpyaki6x",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 10,
+        "createdAt": "2024-06-15T07:48:40.619Z",
+        "createdBy": {
+          "sys": {
+            "id": "0Ic5OmMDb05p3rtGYRcdP2",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2024-06-15T16:41:43.171Z",
+        "updatedBy": {
+          "sys": {
+            "id": "0Ic5OmMDb05p3rtGYRcdP2",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "blog",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "slug",
+          "widgetId": "slugEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "summary",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "articleImage",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "details",
+          "widgetId": "richTextEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "author",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "createdAt",
+          "widgetId": "datePicker",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "aboutText",
+          "widgetId": "richTextEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "02jhtpyaki6x"
+          }
+        },
+        "id": "3cTatPjTGLMqfXtEVvlQsS",
+        "type": "Entry",
+        "createdAt": "2024-06-15T13:14:39.944Z",
+        "updatedAt": "2024-06-15T16:43:21.264Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 51,
+        "publishedAt": "2024-06-15T16:43:21.264Z",
+        "firstPublishedAt": "2024-06-15T13:15:47.027Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0Ic5OmMDb05p3rtGYRcdP2"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0Ic5OmMDb05p3rtGYRcdP2"
+          }
+        },
+        "publishedCounter": 15,
+        "version": 52,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0Ic5OmMDb05p3rtGYRcdP2"
+          }
+        },
+        "automationTags": [
+        ],
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "blog"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/02jhtpyaki6x/environments/master/entries/3cTatPjTGLMqfXtEVvlQsS"
+      },
+      "fields": {
+        "title": {
+          "en-US": "IRONCLAD"
+        },
+        "slug": {
+          "en-US": "ironclad-watches"
+        },
+        "summary": {
+          "en-US": "\"Sophistication at Every Second\""
+        },
+        "articleImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "15lBlgaB7au6Y7oqVJbNGO"
+            }
+          }
+        },
+        "details": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Founded in the heart of Indonesia, Ironclad Watches is",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "dedicated to creating timepieces that symbolize strength,",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "precision, and timeless sophistication.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        },
+        "author": {
+          "en-US": "Ironclad Store"
+        },
+        "createdAt": {
+          "en-US": "2024-06-15T00:00+07:00"
+        },
+        "aboutText": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Crafting Timeless Elegance",
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Welcome to the world of Ironclad Watches, where every timepiece embodies a legacy of craftsmanship and elegance. Founded in the vibrant heart of Indonesia, our journey began with a singular vision: to create watches that epitomize strength, precision, and timeless sophistication.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "At Ironclad, we blend meticulous attention to detail with the finest materials, ensuring each watch not only tells time but also tells a story of dedication and excellence. Our commitment to quality is unwavering, reflecting our passion for horology and our respect for those who value both tradition and innovation in equal measure.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Each Ironclad timepiece is more than just a watch; it is a testament to Indonesian craftsmanship and a symbol of your personal style. Whether you're exploring the bustling streets of Jakarta or embracing the serenity of Bali, an Ironclad watch is your steadfast companion, a mark of sophistication at every second.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "assets": [
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "02jhtpyaki6x"
+          }
+        },
+        "id": "15lBlgaB7au6Y7oqVJbNGO",
+        "type": "Asset",
+        "createdAt": "2024-06-15T08:19:13.236Z",
+        "updatedAt": "2024-06-15T14:45:38.495Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 19,
+        "publishedAt": "2024-06-15T14:45:38.495Z",
+        "firstPublishedAt": "2024-06-15T08:19:39.281Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0Ic5OmMDb05p3rtGYRcdP2"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0Ic5OmMDb05p3rtGYRcdP2"
+          }
+        },
+        "publishedCounter": 5,
+        "version": 20,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0Ic5OmMDb05p3rtGYRcdP2"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/02jhtpyaki6x/environments/master/assets/15lBlgaB7au6Y7oqVJbNGO"
+      },
+      "fields": {
+        "title": {
+          "en-US": "photo-1522312346375-d1a52e2b99b3"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/02jhtpyaki6x/15lBlgaB7au6Y7oqVJbNGO/a62d8e010aa4d68761dda7d13b82bc7a/kelvin-lutan-WwJhYcX-pFI-unsplash.jpg",
+            "details": {
+              "size": 688092,
+              "image": {
+                "width": 5184,
+                "height": 3456
+              }
+            },
+            "fileName": "kelvin-lutan-WwJhYcX-pFI-unsplash.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    }
+  ],
+  "locales": [
+    {
+      "name": "English (United States)",
+      "code": "en-US",
+      "fallbackCode": null,
+      "default": true,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": false,
+      "sys": {
+        "type": "Locale",
+        "id": "7xznmBOWssenmlikLmJYjJ",
+        "version": 1,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "02jhtpyaki6x"
+          }
+        },
+        "environment": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Environment",
+            "id": "master",
+            "uuid": "6249f72e-12e9-452b-8a8a-ac74a90c06bb"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0Ic5OmMDb05p3rtGYRcdP2"
+          }
+        },
+        "createdAt": "2024-06-15T07:36:57Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0Ic5OmMDb05p3rtGYRcdP2"
+          }
+        },
+        "updatedAt": "2024-06-15T07:36:57Z"
+      }
+    }
+  ],
+  "webhooks": [
+  ],
+  "roles": [
+    {
+      "name": "Editor",
+      "description": "Allows editing, publishing and archiving of content",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ],
+        "Environments": [
+        ],
+        "EnvironmentAliases": [
+        ],
+        "Tags": [
+        ]
+      },
+      "sys": {
+        "type": "Role",
+        "id": "7xYHo3RPz1bzyVAfXDezsr",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "02jhtpyaki6x"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0Ic5OmMDb05p3rtGYRcdP2"
+          }
+        },
+        "createdAt": "2024-06-15T07:36:57Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0Ic5OmMDb05p3rtGYRcdP2"
+          }
+        },
+        "updatedAt": "2024-06-15T07:36:57Z"
+      }
+    }
+  ]
+}
