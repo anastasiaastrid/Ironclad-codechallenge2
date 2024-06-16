@@ -23,6 +23,7 @@ export default async function HeroSection() {
             <Image
               className="object-cover h-screen "
               alt="Image"
+              // @ts-ignore
               src={`https:${heromap.fields.articleImage.fields.file.url}`}
               width={1920}
               height={1080}

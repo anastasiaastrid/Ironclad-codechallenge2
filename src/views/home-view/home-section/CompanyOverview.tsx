@@ -3,6 +3,7 @@ import { TypeBlogFields } from "@/types/contentful";
 import Image from "next/image";
 import RichText from "@/views/richtext/richText";
 
+
 export async function fetchCompanyOverviewSection() {
   try {
     const data = await client.getEntries<TypeBlogFields>();
@@ -23,6 +24,7 @@ export default async function CompanyOverview() {
               <Image
                 className="object-cover rounded-lg"
                 alt="Image"
+                // @ts-ignore
                 src={`https:${datamap.fields.companyOverviewImage.fields.file.url}`}
                 width={1900}
                 height={1900}
