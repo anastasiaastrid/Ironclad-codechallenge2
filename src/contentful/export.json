@@ -12,7 +12,7 @@
         "id": "blog",
         "type": "ContentType",
         "createdAt": "2024-06-15T07:48:39.119Z",
-        "updatedAt": "2024-06-16T12:02:12.748Z",
+        "updatedAt": "2024-06-16T15:07:09.640Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -20,8 +20,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 29,
-        "publishedAt": "2024-06-16T12:02:12.748Z",
+        "publishedVersion": 31,
+        "publishedAt": "2024-06-16T15:07:09.640Z",
         "firstPublishedAt": "2024-06-15T07:48:40.401Z",
         "createdBy": {
           "sys": {
@@ -37,8 +37,8 @@
             "id": "0Ic5OmMDb05p3rtGYRcdP2"
           }
         },
-        "publishedCounter": 15,
-        "version": 30,
+        "publishedCounter": 16,
+        "version": 32,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -483,61 +483,7 @@
           ],
           "disabled": false,
           "omitted": false
-        }
-      ]
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "02jhtpyaki6x"
-          }
         },
-        "id": "companyHistory",
-        "type": "ContentType",
-        "createdAt": "2024-06-16T13:54:51.884Z",
-        "updatedAt": "2024-06-16T13:54:52.517Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "publishedVersion": 1,
-        "publishedAt": "2024-06-16T13:54:52.517Z",
-        "firstPublishedAt": "2024-06-16T13:54:52.517Z",
-        "createdBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "0Ic5OmMDb05p3rtGYRcdP2"
-          }
-        },
-        "updatedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "0Ic5OmMDb05p3rtGYRcdP2"
-          }
-        },
-        "publishedCounter": 1,
-        "version": 2,
-        "publishedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "0Ic5OmMDb05p3rtGYRcdP2"
-          }
-        },
-        "urn": "crn:contentful:::content:spaces/02jhtpyaki6x/environments/master/content_types/companyHistory"
-      },
-      "displayField": "companyHistoryTitle",
-      "name": "CompanyHistory",
-      "description": "",
-      "fields": [
         {
           "id": "companyHistoryTitle",
           "name": "companyHistoryTitle",
@@ -627,7 +573,7 @@
             "linkType": "Space"
           }
         },
-        "version": 30,
+        "version": 32,
         "createdAt": "2024-06-15T07:48:40.619Z",
         "createdBy": {
           "sys": {
@@ -636,7 +582,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2024-06-16T12:02:14.047Z",
+        "updatedAt": "2024-06-16T15:07:11.079Z",
         "updatedBy": {
           "sys": {
             "id": "0Ic5OmMDb05p3rtGYRcdP2",
@@ -764,53 +710,7 @@
           "fieldId": "productSection3",
           "widgetId": "richTextEditor",
           "widgetNamespace": "builtin"
-        }
-      ]
-    },
-    {
-      "sys": {
-        "id": "default",
-        "type": "EditorInterface",
-        "space": {
-          "sys": {
-            "id": "02jhtpyaki6x",
-            "type": "Link",
-            "linkType": "Space"
-          }
         },
-        "version": 2,
-        "createdAt": "2024-06-16T13:54:52.849Z",
-        "createdBy": {
-          "sys": {
-            "id": "0Ic5OmMDb05p3rtGYRcdP2",
-            "type": "Link",
-            "linkType": "User"
-          }
-        },
-        "updatedAt": "2024-06-16T13:54:53.691Z",
-        "updatedBy": {
-          "sys": {
-            "id": "0Ic5OmMDb05p3rtGYRcdP2",
-            "type": "Link",
-            "linkType": "User"
-          }
-        },
-        "contentType": {
-          "sys": {
-            "id": "companyHistory",
-            "type": "Link",
-            "linkType": "ContentType"
-          }
-        },
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        }
-      },
-      "controls": [
         {
           "fieldId": "companyHistoryTitle",
           "widgetId": "singleLine",
@@ -848,7 +748,7 @@
         "id": "3cTatPjTGLMqfXtEVvlQsS",
         "type": "Entry",
         "createdAt": "2024-06-15T13:14:39.944Z",
-        "updatedAt": "2024-06-16T13:15:11.356Z",
+        "updatedAt": "2024-06-16T15:15:30.316Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -856,8 +756,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 156,
-        "publishedAt": "2024-06-16T13:15:11.356Z",
+        "publishedVersion": 165,
+        "publishedAt": "2024-06-16T15:15:30.316Z",
         "firstPublishedAt": "2024-06-15T13:15:47.027Z",
         "createdBy": {
           "sys": {
@@ -873,8 +773,8 @@
             "id": "0Ic5OmMDb05p3rtGYRcdP2"
           }
         },
-        "publishedCounter": 52,
-        "version": 157,
+        "publishedCounter": 55,
+        "version": 166,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -1180,26 +1080,92 @@
         },
         "productSection3": {
           "en-US": {
-            "nodeType": "document",
             "data": {
             },
             "content": [
               {
-                "nodeType": "paragraph",
                 "data": {
                 },
                 "content": [
                   {
-                    "nodeType": "text",
-                    "value": "Ironclad Expedition is crafted for the adventurous spirit, combining rugged durability with precision engineering. Designed to withstand the harshest conditions, this series embodies reliability and resilience. Whether exploring the great outdoors or navigating urban landscapes, the Expedition series promises unmatched performance and style.",
+                    "data": {
+                    },
                     "marks": [
                     ],
-                    "data": {
-                    }
+                    "value": "Ironclad Expedition is crafted for the adventurous spirit, combining rugged durability with precision engineering. Designed to withstand the harshest conditions, this series embodies reliability and resilience. Whether exploring the great outdoors or navigating urban landscapes, the Expedition series promises unmatched performance and style.",
+                    "nodeType": "text"
                   }
-                ]
+                ],
+                "nodeType": "paragraph"
               }
-            ]
+            ],
+            "nodeType": "document"
+          }
+        },
+        "companyHistoryTitle": {
+          "en-US": "Company History"
+        },
+        "companyHistoryImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "6IPd3kK8VMq06L5QEgS4bI"
+            }
+          }
+        },
+        "companyHistoryText": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Ironclad History Watches draw inspiration from the military heritage of the 19th century, specifically the era dominated by ironclad warships. These timepieces are characterized by their designs that evoke traditional military instrumentation and aesthetics. Crafted from durable materials, they symbolize the resilience and robustness associated with ironclad ships of the past.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Each Ironclad History Watch integrates a blend of classic elegance and modern technology. They feature precise movements and utilize contemporary materials, ensuring both reliability and comfort for everyday wear. The watches often exhibit intricate detailing that pays homage to historical military themes, appealing to collectors and enthusiasts who appreciate the fusion of historical significance with refined craftsmanship.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Available in limited editions or as collectibles, Ironclad History Watches stand as artifacts that not only tell time but also serve as reminders of a bygone era defined by technological innovation and military prowess. They cater to individuals who seek timepieces with a story to tell, encapsulating the spirit of exploration and adventure that characterized the age of ironclad warships.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
           }
         }
       }
@@ -1576,6 +1542,81 @@
               }
             },
             "fileName": "productAssets-03.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "02jhtpyaki6x"
+          }
+        },
+        "id": "6IPd3kK8VMq06L5QEgS4bI",
+        "type": "Asset",
+        "createdAt": "2024-06-16T15:10:35.044Z",
+        "updatedAt": "2024-06-16T15:12:40.362Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2024-06-16T15:12:40.362Z",
+        "firstPublishedAt": "2024-06-16T15:12:40.362Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0Ic5OmMDb05p3rtGYRcdP2"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0Ic5OmMDb05p3rtGYRcdP2"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0Ic5OmMDb05p3rtGYRcdP2"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/02jhtpyaki6x/environments/master/assets/6IPd3kK8VMq06L5QEgS4bI"
+      },
+      "fields": {
+        "title": {
+          "en-US": "pexels-tima-miroshnichenko-8327683"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/02jhtpyaki6x/6IPd3kK8VMq06L5QEgS4bI/14c5bfabe7cac9d61919626f6aca18b7/pexels-tima-miroshnichenko-8327683.jpg",
+            "details": {
+              "size": 2170497,
+              "image": {
+                "width": 4000,
+                "height": 6000
+              }
+            },
+            "fileName": "pexels-tima-miroshnichenko-8327683.jpg",
             "contentType": "image/jpeg"
           }
         }
