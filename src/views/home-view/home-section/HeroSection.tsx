@@ -21,7 +21,7 @@ export default async function HeroSection() {
         {data?.map((heromap) => (
           <div key={heromap.sys.id} className="relative">
             <Image
-              className="object-cover h-screen "
+              className="object-cover w-full h-auto loading-lazy sm:w-full md:w-full lg:w-full xl:w-full "
               alt="Image"
               // @ts-ignore
               src={`https:${heromap.fields.articleImage.fields.file.url}`}
