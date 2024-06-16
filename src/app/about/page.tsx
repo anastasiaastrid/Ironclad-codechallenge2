@@ -1,4 +1,4 @@
-import AboutView from "@/views/about-view";
+import CompanyOverview from "@/views/about-view/about-section/CompanyHistory";
 import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About - Ironclad Watches - Built to Endure",
@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 function About() {
   return (
     <div>
-      <AboutView />
+      <CompanyOverview />
     </div>
   );
 }

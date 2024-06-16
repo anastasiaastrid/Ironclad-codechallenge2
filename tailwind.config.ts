@@ -1,4 +1,5 @@
 // tailwind.config.js
+import { Anek_Devanagari, Dosis, Poppins } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -15,8 +16,11 @@ const config: Config = {
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       fontFamily: {
-        PlayfairDisplay: ['Playfair Display', 'serif'],
-        PlaywriteDE: ["'Playwrite DE SAS'", "cursive"],
+        PlayfairDisplay: ["Playfair Display", "serif"],
+        ZenDots: ["Zen Dots", "cursive"],
+        BakbakOne: ["Bakbak One", "cursive"],
+        Poppins: ["Poppins", "sans-serif"],
+        Anek_Devanagari: ["Anek Devanagari", "sans-serif"],
       },
     },
   },

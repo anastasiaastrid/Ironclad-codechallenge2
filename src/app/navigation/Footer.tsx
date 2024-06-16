@@ -13,23 +13,23 @@ function Footer() {
       </Link>
       <nav className="flex items-center space-x-4 pr-10">
         <Link href="/">
-          <div className="text-white flex items-center hover:underline hover:text-white hover:font-semibold cursor-pointer">
-            Home
+          <div className="text-white font-BakbakOne tracking-wide flex items-center hover:underline hover:text-white  cursor-pointer">
+            HOME
           </div>
         </Link>
         <Link href="/services">
-          <div className="text-white flex items-center hover:underline hover:text-white hover:font-semibold cursor-pointer">
-            Services
+          <div className="text-white font-BakbakOne tracking-wide flex items-center hover:underline hover:text-white  cursor-pointer">
+            SERVICES
           </div>
         </Link>
         <Link href="/about">
-          <div className="text-white flex items-center hover:underline hover:text-white hover:font-semibold cursor-pointer">
-            About Us
+          <div className="text-white font-BakbakOne tracking-wide flex items-center hover:underline hover:text-white  cursor-pointer">
+            ABOUT
           </div>
         </Link>
         <Link href="/team">
-          <div className="text-white flex items-center hover:underline hover:text-white hover:font-semibold cursor-pointer">
-            Our Team
+          <div className="text-white font-BakbakOne tracking-wide flex items-center hover:underline hover:text-white  cursor-pointer">
+            TEAM
           </div>
         </Link>
       </nav>
