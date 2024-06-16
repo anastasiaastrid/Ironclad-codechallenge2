@@ -29,8 +29,9 @@ export default async function CompanyOverview() {
               />
             </div>
             <div className="md:w-1/2 md:pl-10 mt-4 md:mt-0 md:pr-40 text-center md:text-left">
-              <div className="text-sm text-slate-950 leading-relaxed font-semibold">
-                <p className="text-5xl pb-14 text-black font-semibold">{datamap.fields.companyOverviewTitle}</p>
+              <div className="text-sm text-slate-950 leading-relaxed font-semibold text-justify">
+                <p className="text-4xl text-black font-semibold">{datamap.fields.companyOverviewTitle}</p>
+                <p className="text-xl pb-4 text-black font-semibold font-PlaywriteDE">{datamap.fields.tagLine}</p>
                 <RichText document={datamap.fields.aboutText} />
               </div>
             </div>
