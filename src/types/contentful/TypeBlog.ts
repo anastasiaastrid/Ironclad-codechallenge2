@@ -11,6 +11,7 @@ export interface TypeBlogFields {
     author: EntryFields.Symbol;
     createdAt: EntryFields.Date;
     aboutText: EntryFields.RichText;
+    companyOverviewImage: Asset;
   };
 }
 
