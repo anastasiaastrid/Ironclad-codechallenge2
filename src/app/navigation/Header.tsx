@@ -18,9 +18,9 @@ function Header() {
             HOME
           </div>
         </Link>
-        <Link href="/services">
+        <Link href="/product">
           <div className="text-white font-BakbakOne tracking-wide flex items-center hover:underline hover:text-white  cursor-pointer">
-            SERVICES
+            PRODUCTS
           </div>
         </Link>
         <Link href="/about">

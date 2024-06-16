@@ -24,6 +24,9 @@ export interface TypeBlogFields {
     productSection1: EntryFields.RichText;
     productSection2: EntryFields.RichText;
     productSection3: EntryFields.RichText;
+    companyHistoryImage: Asset;
+    companyHistoryTitle: EntryFields.Symbol;
+    companyHistoryText: EntryFields.RichText;
   };
 }
 

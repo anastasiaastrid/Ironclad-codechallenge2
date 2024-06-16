@@ -1,14 +1,14 @@
-import CompanyOverview from "@/views/about-view/about-section/CompanyHistory";
+import AboutView from "@/views/about-view";
 import { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "About - Ironclad Watches - Built to Endure",
+  title: "About - Ironclad Watches - Timeless Toughness",
   description: "Luxury watches in Indonesia",
 };
 
 function About() {
   return (
     <div>
-      <CompanyOverview />
+      <AboutView />
     </div>
   );
 }

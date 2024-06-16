@@ -1,6 +1,6 @@
 "use client";
 import { client } from "@/utils/contentful";
-import { TypeBlogFields } from "@/app/types/contentful/TypeBlog";
+import { TypeBlogFields } from "@/types/contentful";
 import Image from "next/image";
 import RichText from "@/views/richtext/richText";
 import { useState, useEffect } from "react";
@@ -25,7 +25,7 @@ function CompanyOverview() {
       {data?.map((datamap) => (
         // @ts-ignore
         <div key={datamap.sys.id} className="my-1 md:flex md:items-center justify-center lg:flex lg:item-center">
-          <div className="md:w-1/2 sm:p-14 md:px-28 md: pb-2">
+          <div className="md:w-1/2 sm:p-14 md:p-28">
             <Image
               className="object-cover rounded-md loading-lazy sm:w-full md:w-full md:h-1/2 lg:w-full xl:w-full"
               alt="Image"

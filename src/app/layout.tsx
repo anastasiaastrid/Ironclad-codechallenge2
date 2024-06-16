@@ -7,7 +7,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Ironclad Watches - Sophistication at Every Second",
+  title: "Ironclad Watches - Timeless Toughness",
   description: "Luxury watches in Indonesia",
 };
 

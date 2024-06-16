@@ -1,40 +1,10 @@
 import React from "react";
-import Link from "next/link";
+import CompanyHistory from "./about-section/CompanyHistory";
 
 function AboutView() {
   return (
     <div>
-      <p>ini halaman about!!</p>
-      <p>ini halaman about!!</p>
-      <p>ini halaman about!!</p>
-      <p>ini halaman about!!</p>
-      <p>ini halaman about!!</p>
-      <p>ini halaman about!!</p>
-      <p>ini halaman about!!</p>
-      <p>ini halaman about!!</p>
-      <p>ini halaman about!!</p>
-      <p>ini halaman about!!</p>
-      <p>ini halaman about!!</p>
-      <p>ini halaman about!!</p>
-      <p>ini halaman about!!</p>
-      <p>ini halaman about!!</p>
-      <p>ini halaman about!!</p>
-      <p>ini halaman about!!</p>
-      <p>ini halaman about!!</p>
-      <p>ini halaman about!!</p>
-      <p>ini halaman about!!</p>
-      <p>ini halaman about!!</p>
-      <p>ini halaman about!!</p>
-      <p>ini halaman about!!</p>
-      <p>ini halaman about!!</p>
-      <p>ini halaman about!!</p>
-      <p>ini halaman about!!</p>
-      <p>ini halaman about!!</p>
-      <p>ini halaman about!!</p>
-      <p>ini halaman about!!</p>
-      <p>ini halaman about!!</p>
-      <p>ini halaman about!!</p>
-      <p>ini halaman about!!</p>
+      <CompanyHistory />
     </div>
   );
 }

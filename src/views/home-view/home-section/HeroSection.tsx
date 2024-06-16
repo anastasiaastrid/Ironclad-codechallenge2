@@ -22,6 +22,7 @@ function HeroSection() {
     }
     fetchData();
   }, []);
+
   return (
     <div className="pb-0">
       {data?.map((datamap) => (
@@ -36,15 +37,17 @@ function HeroSection() {
             height={1080}
             loading="lazy"
           />
-          <div className="absolute inset-0 flex flex-col text-left text-white bg-black bg-opacity-50 p-4 lg:pl-40 lg:p-14 lg:pt-28 md: pt-40 sm:pt-40 xs:pt-40 ">
+          <div className="absolute inset-0 flex flex-col text-left text-white bg-black bg-opacity-50 p-4 lg:pl-40 lg:p-14 lg:pt-28 md:pt-40 sm:pt-40 xs:pt-40">
             <p className="text-4xl lg:text-7xl font-ZenDots">{datamap.fields.title}</p>
-            <p className="pt-4 lg:pt-7 text-lg lg:text-2xl tracking-wide font-BakbakOne ">{datamap.fields.summary}</p>
+            <p className="pt-4 lg:pt-7 text-lg lg:text-2xl tracking-wide font-BakbakOne">{datamap.fields.summary}</p>
             <div className="font-Anek_Devanagari pt-4 lg:pt-7 text-lg">
               <RichText document={datamap.fields.details} />
             </div>
             <div className="pt-4 lg:pt-7">
-              <Link className="px-4 py-2 bg-white font-bold text-black rounded" href="/products">
-                Shop Now
+              <Link href="/product/">
+                <button className="px-4 py-2 font-bold text-black rounded flex items-center justify-center bg-white text-center transition duration-300 transform hover:scale-110">
+                  Shop Now
+                </button>
               </Link>
             </div>
           </div>

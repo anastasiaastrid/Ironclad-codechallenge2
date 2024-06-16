@@ -12,7 +12,7 @@
         "id": "blog",
         "type": "ContentType",
         "createdAt": "2024-06-15T07:48:39.119Z",
-        "updatedAt": "2024-06-15T16:41:42.053Z",
+        "updatedAt": "2024-06-16T12:02:12.748Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -20,8 +20,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 9,
-        "publishedAt": "2024-06-15T16:41:42.053Z",
+        "publishedVersion": 29,
+        "publishedAt": "2024-06-16T12:02:12.748Z",
         "firstPublishedAt": "2024-06-15T07:48:40.401Z",
         "createdBy": {
           "sys": {
@@ -37,8 +37,8 @@
             "id": "0Ic5OmMDb05p3rtGYRcdP2"
           }
         },
-        "publishedCounter": 5,
-        "version": 10,
+        "publishedCounter": 15,
+        "version": 30,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -222,6 +222,393 @@
           ],
           "disabled": false,
           "omitted": false
+        },
+        {
+          "id": "companyOverviewTitle",
+          "name": "companyOverviewTitle",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "tagLine",
+          "name": "tagLine",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "companyOverviewImage",
+          "name": "companyOverviewImage",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "productTitle",
+          "name": "productTitle",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "imageProductSection1",
+          "name": "imageProductSection1",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "titleProductSection1",
+          "name": "titleProductSection1",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "productSection1",
+          "name": "productSection1",
+          "type": "RichText",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "enabledMarks": [
+                "bold",
+                "italic",
+                "underline",
+                "code",
+                "superscript",
+                "subscript",
+                "strikethrough"
+              ],
+              "message": "Only bold, italic, underline, code, superscript, subscript, and strikethrough marks are allowed"
+            },
+            {
+              "enabledNodeTypes": [
+                "heading-1",
+                "heading-2",
+                "heading-3",
+                "heading-4",
+                "heading-5",
+                "heading-6",
+                "ordered-list",
+                "unordered-list",
+                "hr",
+                "blockquote",
+                "embedded-entry-block",
+                "embedded-asset-block",
+                "table",
+                "hyperlink",
+                "entry-hyperlink",
+                "asset-hyperlink",
+                "embedded-entry-inline"
+              ],
+              "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, table, link to Url, link to entry, link to asset, and inline entry nodes are allowed"
+            },
+            {
+              "nodes": {
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "imageProductSection2",
+          "name": "imageProductSection2",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "titleProductSection2",
+          "name": "titleProductSection2",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "productSection2",
+          "name": "productSection2",
+          "type": "RichText",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "enabledMarks": [
+                "bold",
+                "italic",
+                "underline",
+                "code",
+                "superscript",
+                "subscript",
+                "strikethrough"
+              ],
+              "message": "Only bold, italic, underline, code, superscript, subscript, and strikethrough marks are allowed"
+            },
+            {
+              "enabledNodeTypes": [
+                "heading-1",
+                "heading-2",
+                "heading-3",
+                "heading-4",
+                "heading-5",
+                "heading-6",
+                "ordered-list",
+                "unordered-list",
+                "hr",
+                "blockquote",
+                "embedded-entry-block",
+                "embedded-asset-block",
+                "table",
+                "hyperlink",
+                "entry-hyperlink",
+                "asset-hyperlink",
+                "embedded-entry-inline"
+              ],
+              "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, table, link to Url, link to entry, link to asset, and inline entry nodes are allowed"
+            },
+            {
+              "nodes": {
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "imageProductSection3",
+          "name": "imageProductSection3",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "titleProductSection3",
+          "name": "titleProductSection3",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "productSection3",
+          "name": "productSection3",
+          "type": "RichText",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "enabledMarks": [
+                "bold",
+                "italic",
+                "underline",
+                "code",
+                "superscript",
+                "subscript",
+                "strikethrough"
+              ],
+              "message": "Only bold, italic, underline, code, superscript, subscript, and strikethrough marks are allowed"
+            },
+            {
+              "enabledNodeTypes": [
+                "heading-1",
+                "heading-2",
+                "heading-3",
+                "heading-4",
+                "heading-5",
+                "heading-6",
+                "ordered-list",
+                "unordered-list",
+                "hr",
+                "blockquote",
+                "embedded-entry-block",
+                "embedded-asset-block",
+                "table",
+                "hyperlink",
+                "entry-hyperlink",
+                "asset-hyperlink",
+                "embedded-entry-inline"
+              ],
+              "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, table, link to Url, link to entry, link to asset, and inline entry nodes are allowed"
+            },
+            {
+              "nodes": {
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "02jhtpyaki6x"
+          }
+        },
+        "id": "companyHistory",
+        "type": "ContentType",
+        "createdAt": "2024-06-16T13:54:51.884Z",
+        "updatedAt": "2024-06-16T13:54:52.517Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2024-06-16T13:54:52.517Z",
+        "firstPublishedAt": "2024-06-16T13:54:52.517Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0Ic5OmMDb05p3rtGYRcdP2"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0Ic5OmMDb05p3rtGYRcdP2"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0Ic5OmMDb05p3rtGYRcdP2"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/02jhtpyaki6x/environments/master/content_types/companyHistory"
+      },
+      "displayField": "companyHistoryTitle",
+      "name": "CompanyHistory",
+      "description": "",
+      "fields": [
+        {
+          "id": "companyHistoryTitle",
+          "name": "companyHistoryTitle",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "companyHistoryImage",
+          "name": "companyHistoryImage",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "companyHistoryText",
+          "name": "companyHistoryText",
+          "type": "RichText",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "enabledMarks": [
+                "bold",
+                "italic",
+                "underline",
+                "code",
+                "superscript",
+                "subscript",
+                "strikethrough"
+              ],
+              "message": "Only bold, italic, underline, code, superscript, subscript, and strikethrough marks are allowed"
+            },
+            {
+              "enabledNodeTypes": [
+                "heading-1",
+                "heading-2",
+                "heading-3",
+                "heading-4",
+                "heading-5",
+                "heading-6",
+                "ordered-list",
+                "unordered-list",
+                "hr",
+                "blockquote",
+                "embedded-entry-block",
+                "embedded-asset-block",
+                "table",
+                "hyperlink",
+                "entry-hyperlink",
+                "asset-hyperlink",
+                "embedded-entry-inline"
+              ],
+              "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, table, link to Url, link to entry, link to asset, and inline entry nodes are allowed"
+            },
+            {
+              "nodes": {
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
         }
       ]
     }
@@ -240,7 +627,7 @@
             "linkType": "Space"
           }
         },
-        "version": 10,
+        "version": 30,
         "createdAt": "2024-06-15T07:48:40.619Z",
         "createdBy": {
           "sys": {
@@ -249,7 +636,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2024-06-15T16:41:43.171Z",
+        "updatedAt": "2024-06-16T12:02:14.047Z",
         "updatedBy": {
           "sys": {
             "id": "0Ic5OmMDb05p3rtGYRcdP2",
@@ -312,6 +699,132 @@
           "fieldId": "aboutText",
           "widgetId": "richTextEditor",
           "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "companyOverviewTitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "tagLine",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "companyOverviewImage",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "productTitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "imageProductSection1",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "titleProductSection1",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "productSection1",
+          "widgetId": "richTextEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "imageProductSection2",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "titleProductSection2",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "productSection2",
+          "widgetId": "richTextEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "imageProductSection3",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "titleProductSection3",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "productSection3",
+          "widgetId": "richTextEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "02jhtpyaki6x",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2024-06-16T13:54:52.849Z",
+        "createdBy": {
+          "sys": {
+            "id": "0Ic5OmMDb05p3rtGYRcdP2",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2024-06-16T13:54:53.691Z",
+        "updatedBy": {
+          "sys": {
+            "id": "0Ic5OmMDb05p3rtGYRcdP2",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "companyHistory",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "companyHistoryTitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "companyHistoryImage",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "companyHistoryText",
+          "widgetId": "richTextEditor",
+          "widgetNamespace": "builtin"
         }
       ]
     }
@@ -335,7 +848,7 @@
         "id": "3cTatPjTGLMqfXtEVvlQsS",
         "type": "Entry",
         "createdAt": "2024-06-15T13:14:39.944Z",
-        "updatedAt": "2024-06-15T16:43:21.264Z",
+        "updatedAt": "2024-06-16T13:15:11.356Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -343,8 +856,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 51,
-        "publishedAt": "2024-06-15T16:43:21.264Z",
+        "publishedVersion": 156,
+        "publishedAt": "2024-06-16T13:15:11.356Z",
         "firstPublishedAt": "2024-06-15T13:15:47.027Z",
         "createdBy": {
           "sys": {
@@ -360,8 +873,8 @@
             "id": "0Ic5OmMDb05p3rtGYRcdP2"
           }
         },
-        "publishedCounter": 15,
-        "version": 52,
+        "publishedCounter": 52,
+        "version": 157,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -393,7 +906,7 @@
           "en-US": "ironclad-watches"
         },
         "summary": {
-          "en-US": "\"Sophistication at Every Second\""
+          "en-US": "TIMELESS TOUGHNESS"
         },
         "articleImage": {
           "en-US": {
@@ -481,6 +994,192 @@
         },
         "aboutText": {
           "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Ironclad Watches, founded in 2024 in Indonesia, embarked on a mission to redefine watchmaking by fusing local craftsmanship with international sophistication. Its early years were characterized by a relentless pursuit of design excellence and production innovation, focusing on creating timepieces that not only exemplified precision engineering but also embodied a unique sense of style.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "As Ironclad Watches gained traction in the competitive watch market, its reputation for uncompromising quality and innovative design flourished. The brand's commitment to using the finest materials and integrating cutting-edge technology into its timepieces became its hallmark, attracting a loyal following among discerning watch enthusiasts worldwide.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Throughout its journey, Ironclad Watches has remained steadfast in its core values of strength, precision, and timeless elegance. Each watch is meticulously crafted not only to meet but surpass the expectations of its wearers. The brand's design philosophy harmonizes modern aesthetics with a deep reverence for traditional watchmaking techniques, ensuring that every Ironclad timepiece is not merely an accessory but a testament to craftsmanship and artistry.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        },
+        "companyOverviewTitle": {
+          "en-US": "IRONCLAD"
+        },
+        "tagLine": {
+          "en-US": "TIMELESS TOUGHNESS"
+        },
+        "companyOverviewImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "3XaBxrGMtHeTYe7kjR2jQh"
+            }
+          }
+        },
+        "productTitle": {
+          "en-US": "SIGNATURE EDITION"
+        },
+        "imageProductSection1": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "3gguXZWuISUdwQQZnMdEDi"
+            }
+          }
+        },
+        "titleProductSection1": {
+          "en-US": "Ironclad Defender Series "
+        },
+        "productSection1": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Ironclad Defender Series offers more than just rugged durability, it's a companion built for the adventurous spirit, combining robust design with advanced functionality. Whether trekking through rugged terrains or diving into deep waters, this timepiece stands as a testament to endurance and reliability, ensuring precision and style in every expedition.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        },
+        "imageProductSection2": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "469ftyg3BOeDK08vV3XnQo"
+            }
+          }
+        },
+        "titleProductSection2": {
+          "en-US": "Ironclad Heritage Collection "
+        },
+        "productSection2": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Ironclad Heritage Collection embodies timeless elegance and craftsmanship, celebrating heritage while embracing modernity. This collection pays homage to classic watchmaking traditions, blending exquisite design with meticulous attention to detail. Each timepiece in the Heritage Collection tells a story of sophistication and refinement. ",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        },
+        "imageProductSection3": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "1Qi81yGzNvfgfDYqtyPerz"
+            }
+          }
+        },
+        "titleProductSection3": {
+          "en-US": "Ironclad Expedition Series"
+        },
+        "productSection3": {
+          "en-US": {
             "nodeType": "document",
             "data": {
             },
@@ -492,55 +1191,7 @@
                 "content": [
                   {
                     "nodeType": "text",
-                    "value": "Crafting Timeless Elegance",
-                    "marks": [
-                      {
-                        "type": "bold"
-                      }
-                    ],
-                    "data": {
-                    }
-                  }
-                ]
-              },
-              {
-                "nodeType": "paragraph",
-                "data": {
-                },
-                "content": [
-                  {
-                    "nodeType": "text",
-                    "value": "Welcome to the world of Ironclad Watches, where every timepiece embodies a legacy of craftsmanship and elegance. Founded in the vibrant heart of Indonesia, our journey began with a singular vision: to create watches that epitomize strength, precision, and timeless sophistication.",
-                    "marks": [
-                    ],
-                    "data": {
-                    }
-                  }
-                ]
-              },
-              {
-                "nodeType": "paragraph",
-                "data": {
-                },
-                "content": [
-                  {
-                    "nodeType": "text",
-                    "value": "At Ironclad, we blend meticulous attention to detail with the finest materials, ensuring each watch not only tells time but also tells a story of dedication and excellence. Our commitment to quality is unwavering, reflecting our passion for horology and our respect for those who value both tradition and innovation in equal measure.",
-                    "marks": [
-                    ],
-                    "data": {
-                    }
-                  }
-                ]
-              },
-              {
-                "nodeType": "paragraph",
-                "data": {
-                },
-                "content": [
-                  {
-                    "nodeType": "text",
-                    "value": "Each Ironclad timepiece is more than just a watch; it is a testament to Indonesian craftsmanship and a symbol of your personal style. Whether you're exploring the bustling streets of Jakarta or embracing the serenity of Bali, an Ironclad watch is your steadfast companion, a mark of sophistication at every second.",
+                    "value": "Ironclad Expedition is crafted for the adventurous spirit, combining rugged durability with precision engineering. Designed to withstand the harshest conditions, this series embodies reliability and resilience. Whether exploring the great outdoors or navigating urban landscapes, the Expedition series promises unmatched performance and style.",
                     "marks": [
                     ],
                     "data": {
@@ -625,6 +1276,306 @@
               }
             },
             "fileName": "kelvin-lutan-WwJhYcX-pFI-unsplash.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "02jhtpyaki6x"
+          }
+        },
+        "id": "3XaBxrGMtHeTYe7kjR2jQh",
+        "type": "Asset",
+        "createdAt": "2024-06-15T17:56:55.908Z",
+        "updatedAt": "2024-06-16T10:41:56.730Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 7,
+        "publishedAt": "2024-06-16T10:41:56.730Z",
+        "firstPublishedAt": "2024-06-15T17:57:19.412Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0Ic5OmMDb05p3rtGYRcdP2"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0Ic5OmMDb05p3rtGYRcdP2"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 8,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0Ic5OmMDb05p3rtGYRcdP2"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/02jhtpyaki6x/environments/master/assets/3XaBxrGMtHeTYe7kjR2jQh"
+      },
+      "fields": {
+        "title": {
+          "en-US": "eve-maier-C2CMrC1zcWw-unsplash"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/02jhtpyaki6x/3XaBxrGMtHeTYe7kjR2jQh/50a9a2f2c6692ef5a7129531e8adf650/charles-gaudreault-ZcVCaB7ySBA-unsplash.jpg",
+            "details": {
+              "size": 1693036,
+              "image": {
+                "width": 3721,
+                "height": 5210
+              }
+            },
+            "fileName": "charles-gaudreault-ZcVCaB7ySBA-unsplash.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "02jhtpyaki6x"
+          }
+        },
+        "id": "469ftyg3BOeDK08vV3XnQo",
+        "type": "Asset",
+        "createdAt": "2024-06-16T11:36:54.851Z",
+        "updatedAt": "2024-06-16T12:28:20.889Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 7,
+        "publishedAt": "2024-06-16T12:28:20.889Z",
+        "firstPublishedAt": "2024-06-16T11:37:48.354Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0Ic5OmMDb05p3rtGYRcdP2"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0Ic5OmMDb05p3rtGYRcdP2"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 8,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0Ic5OmMDb05p3rtGYRcdP2"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/02jhtpyaki6x/environments/master/assets/469ftyg3BOeDK08vV3XnQo"
+      },
+      "fields": {
+        "title": {
+          "en-US": "productAssets-01"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/02jhtpyaki6x/469ftyg3BOeDK08vV3XnQo/24d053d011d5704cb37d103073668f39/productAssets-01-01.jpg",
+            "details": {
+              "size": 1389758,
+              "image": {
+                "width": 1575,
+                "height": 2250
+              }
+            },
+            "fileName": "productAssets-01-01.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "02jhtpyaki6x"
+          }
+        },
+        "id": "1Qi81yGzNvfgfDYqtyPerz",
+        "type": "Asset",
+        "createdAt": "2024-06-16T11:38:36.781Z",
+        "updatedAt": "2024-06-16T11:38:52.219Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2024-06-16T11:38:52.219Z",
+        "firstPublishedAt": "2024-06-16T11:38:52.219Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0Ic5OmMDb05p3rtGYRcdP2"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0Ic5OmMDb05p3rtGYRcdP2"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0Ic5OmMDb05p3rtGYRcdP2"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/02jhtpyaki6x/environments/master/assets/1Qi81yGzNvfgfDYqtyPerz"
+      },
+      "fields": {
+        "title": {
+          "en-US": "productAssets-02"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/02jhtpyaki6x/1Qi81yGzNvfgfDYqtyPerz/03868de5b5062a7597b9e8db51f06f03/productAssets-02.jpg",
+            "details": {
+              "size": 1382361,
+              "image": {
+                "width": 1575,
+                "height": 2250
+              }
+            },
+            "fileName": "productAssets-02.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "02jhtpyaki6x"
+          }
+        },
+        "id": "3gguXZWuISUdwQQZnMdEDi",
+        "type": "Asset",
+        "createdAt": "2024-06-16T11:39:15.270Z",
+        "updatedAt": "2024-06-16T11:39:30.539Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2024-06-16T11:39:30.539Z",
+        "firstPublishedAt": "2024-06-16T11:39:30.539Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0Ic5OmMDb05p3rtGYRcdP2"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0Ic5OmMDb05p3rtGYRcdP2"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0Ic5OmMDb05p3rtGYRcdP2"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/02jhtpyaki6x/environments/master/assets/3gguXZWuISUdwQQZnMdEDi"
+      },
+      "fields": {
+        "title": {
+          "en-US": "productAssets-03"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/02jhtpyaki6x/3gguXZWuISUdwQQZnMdEDi/95afda00c1f9815bba637677d0b50632/productAssets-03.jpg",
+            "details": {
+              "size": 1119391,
+              "image": {
+                "width": 1575,
+                "height": 2250
+              }
+            },
+            "fileName": "productAssets-03.jpg",
             "contentType": "image/jpeg"
           }
         }
