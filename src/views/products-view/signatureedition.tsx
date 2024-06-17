@@ -27,6 +27,10 @@ function SignatureEdition() {
     <div className="bg-white min-h-full">
       <Head>
         <title>Ironclad Watch Signature Edition Products</title>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@400;700&family=Bakbak+One&family=Zen+Dots&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
         {data?.map((datamap) => (
