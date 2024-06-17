@@ -30,9 +30,12 @@ function CompanyOverview() {
       {data?.map((datamap) => (
         //@ts-ignore
         <div
-        //@ts-ignore
+          //@ts-ignore
           key={datamap.sys.id}
-          className="my-1 md:flex md:items-center justify-center lg:px-16 lg:flex lg:item-center"
+          className="my-5 px-16 justify-center
+          md:flex md:items-center
+          lg:px-16 lg:flex lg:item-center
+          "
         >
           <div className="md:w-1/2 sm:p-4 md:px-8 lg:px-12 md:pb-2">
             <Image

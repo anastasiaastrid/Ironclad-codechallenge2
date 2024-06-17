@@ -11,18 +11,21 @@ function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-50 flex items-center justify-between py-4 px-10 bg-black text-white">
+    <header
+      className="sticky top-0 z-50 flex items-center justify-between p-7
+    lg:py-5 lg:px-20 bg-black text-white"
+    >
       <Link href="/">
         <div className="flex items-center space-x-2 cursor-pointer">
           <Image src="/static/logo/ironcladwatcheslogo-01-white-01.svg" alt="Ironclad Watches" width={50} height={50} />
           <h1 className="text-xl font-ZenDots">IRONCLAD</h1>
-          <h1 className="text-xl font-BakbakOne">TIMELESS TOUGHNESS</h1>
+          <h1 className="text-xl font-BakbakOne hidden md:block sm:block lg:block ">TIMELESS TOUGHNESS</h1>
         </div>
       </Link>
 
       {/* Hamburger menu */}
       <div className="block lg:hidden">
-        <button onClick={toggleMenu} className="text-white focus:outline-none">
+        <button onClick={toggleMenu} className="text-white focus:outline-none p-1">
           <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             {isOpen ? (
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />

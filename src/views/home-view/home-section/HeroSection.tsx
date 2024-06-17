@@ -23,21 +23,33 @@ function HeroSection() {
   }, []);
 
   return (
-    <div className="pb-0">
+    <div className="grid grid-cols-1 pb-0">
       {data?.map((datamap) => (
         // @ts-ignore
+
+        //imagesection
         <div key={datamap.sys.id} className="relative">
           <Image
-            className="object-cover"
+            className="object-cover
+            lg:object-cover lg:-mt-16"
             alt="Image"
             // @ts-ignore
             src={`https:${datamap.fields.articleImage.fields.file.url}`}
             width={1920}
             height={1080}
-            sizes="(max-width: 600px) 480px, (max-width: 1200px) 800px, 1200px"
             priority
           />
-          <div className="absolute inset-0 flex flex-col justify-center items-start text-white bg-black bg-opacity-50 p-4 lg:pl-40 lg:pt-20 md:pt-16 sm:pt-12 xs:pt-10">
+
+          {/* div for text */}
+
+          <div
+            className=" TEXT
+          inset-0 flex flex-col justify-center text-white px-10 py-10 -mt-14
+          md:absolute sm:absolute lg:absolute
+          md: bg-black md:bg-opacity-50 lg:bg-black lg:bg-opacity-50 sm:bg-black sm:bg-opacity-50
+          lg:pl-28 lg:p-[155px] md:pt-16 sm:pt-16
+            "
+          >
             <p className="text-4xl lg:text-7xl font-ZenDots">{datamap.fields.title}</p>
             <p className="pt-4 lg:pt-6 text-lg lg:text-2xl tracking-wide font-BakbakOne">{datamap.fields.summary}</p>
             <div className="font-Anek_Devanagari pt-4 lg:pt-6 text-lg">
