@@ -52,8 +52,8 @@ function CompanyOverview() {
               />
             </div>
             <div className="text-center md:text-left">
-              <p className="text-3xl lg:text-5xl text-black ">{datamap.fields.title}</p>
-              <p className="text-xl lg:text-2xl pb-4 text-black  tracking-widest">
+              <p className="text-3xl lg:text-5xl text-black font-ZenDots">{datamap.fields.title}</p>
+              <p className="text-xl lg:text-2xl pb-4 text-black font-BakbakOne tracking-widest">
                 {datamap.fields.tagLine}
               </p>
               <div className="text-lg lg:text-base text-gray-900 leading-7 text-justify">
