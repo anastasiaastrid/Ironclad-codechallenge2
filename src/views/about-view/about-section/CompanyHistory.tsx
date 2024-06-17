@@ -23,7 +23,7 @@ function CompanyHistory() {
   }, []);
 
   return (
-    <div className="bg-white min-h-full">
+    <div className="bg-white min-h-full ">
       <Head>
         <title>Ironclad Watch Company History</title>
       </Head>
@@ -39,12 +39,13 @@ function CompanyHistory() {
                 src={`https:${datamap.fields.companyHistoryImage.fields.file.url}`}
                 width={500}
                 height={500}
+                sizes="100vw"
                 loading="lazy"
               />
             </div>
             <div className="text-center md:text-left">
-              <p className="text-3xl lg:text-5xl text-black font-ZenDots">{datamap.fields.title}</p>
-              <p className="text-xl lg:text-2xl pb-4 text-black font-BakbakOne tracking-widest">
+              <p className="text-3xl lg:text-5xl text-black">{datamap.fields.title}</p>
+              <p className="text-xl lg:text-2xl pb-4 text-black tracking-widest">
                 {datamap.fields.companyHistoryTitle}
               </p>
               <div className="text-lg lg:text-base text-gray-900 leading-7 text-justify">

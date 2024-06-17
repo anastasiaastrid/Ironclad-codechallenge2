@@ -47,6 +47,7 @@ function CompanyOverview() {
                 src={`https:${datamap.fields.companyOverviewImage.fields.file.url}`}
                 width={500}
                 height={500}
+                sizes="100vw"
                 loading="lazy"
               />
             </div>
