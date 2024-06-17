@@ -14,9 +14,7 @@ function Header() {
   return (
     <header className="sticky top-0 z-50 flex items-center justify-between p-7 lg:py-5 lg:px-20 bg-black text-white">
       <Head>
-        {/* Preload logo image */}
         <link rel="preload" href="/static/logo/ironcladwatcheslogo-01-white-01-01.png" as="image" />
-        {/* Preload fonts */}
         <link rel="preload" href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" as="style" />
         <link rel="preload" href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" as="style" />
       </Head>
@@ -25,15 +23,14 @@ function Header() {
         <div className="flex items-center space-x-2 cursor-pointer">
           <Image src="/static/logo/ironcladwatcheslogo-01-white-01-01.png" alt="Logo" width={50} height={50} />
           <h1 className="text-xl font-ZenDots">IRONCLAD</h1>
-          <h1 className="text-xl font-BakbakOne hidden md:block sm:block lg:block">TIMELESS TOUGHNESS</h1>
         </div>
       </Link>
 
-      {/* Hamburger menu */}
+      {/* Hamburger*/}
       <div className="block lg:hidden">
         <button
           onClick={toggleMenu}
-          className="text-white focus:outline-none p-3" // increased padding for better touch target
+          className="text-white focus:outline-none p-3"
           aria-label={isOpen ? "Close menu" : "Open menu"}
         >
           <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -46,7 +43,7 @@ function Header() {
         </button>
       </div>
 
-      {/* Menu items */}
+      {/* Menu */}
       <nav className={`lg:flex lg:items-center lg:space-x-4 ${isOpen ? "block" : "hidden"}`}>
         <Link href="/">
           <div

@@ -33,8 +33,12 @@ function SignatureEdition() {
           // @ts-ignore
           <div key={datamap.sys.id} className="bg-zinc-900 font-Anek_Devanagari pt-5 pb-8 px-4 sm:px-6 lg:px-8">
             <div className="px-4 sm:px-0">
-              <p className="text-3xl lg:text-5xl text-white font-ZenDots text-center">{datamap.fields.companyOverviewTitle}</p>
-              <p className="text-white font-BakbakOne tracking-widest pb-4 text-center">{datamap.fields.productTitle}</p>
+              <p className="text-3xl lg:text-5xl text-white font-ZenDots text-center">
+                {datamap.fields.companyOverviewTitle}
+              </p>
+              <p className="text-white font-BakbakOne tracking-widest pb-4 text-center">
+                {datamap.fields.productTitle}
+              </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 sm:px-0">
               <div className="text-gray-200">
@@ -58,9 +62,7 @@ function SignatureEdition() {
                 </div>
                 <div className="pt-2 px-4 sm:px-0 text-center">
                   <Link href="/product/">
-                    <button className="px-4 py-2 font-bold text-black rounded-full bg-white hover:bg-gray-200 transition duration-300">
-                      Shop Now
-                    </button>
+                    <button className="px-4 py-2 font-bold text-black rounded-full bg-white">Shop Now</button>
                   </Link>
                 </div>
               </div>
@@ -85,9 +87,7 @@ function SignatureEdition() {
                 </div>
                 <div className="pt-2 px-4 sm:px-0 text-center">
                   <Link href="/product/">
-                    <button className="px-4 py-2 font-bold text-black rounded-full bg-white hover:bg-gray-200 transition duration-300">
-                      Shop Now
-                    </button>
+                    <button className="px-4 py-2 font-bold text-black rounded-full bg-white">Shop Now</button>
                   </Link>
                 </div>
               </div>
@@ -112,9 +112,7 @@ function SignatureEdition() {
                 </div>
                 <div className="pt-2 px-4 sm:px-0 text-center">
                   <Link href="/product/">
-                    <button className="px-4 py-2 font-bold text-black rounded-full bg-white hover:bg-gray-200 transition duration-300">
-                      Shop Now
-                    </button>
+                    <button className="px-4 py-2 font-bold text-black rounded-full bg-white">Shop Now</button>
                   </Link>
                 </div>
               </div>
