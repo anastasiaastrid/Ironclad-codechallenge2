@@ -37,7 +37,7 @@ function CompanyOverview() {
           lg:px-16 lg:flex lg:item-center
           "
         >
-          <div className="md:w-1/2 sm:p-4 md:px-8 lg:px-12 md:pb-2">
+          <div className="px-16 md:w-1/2 sm:p-4 md:px-8 lg:px-36 md:pb-2">
             <Image
               className="rounded-md"
               alt="Image"

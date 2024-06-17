@@ -1,6 +1,6 @@
 import HeroSection from "./home-section/HeroSection";
 import CompanyOverview from "../about-view/about-section/CompanyOverview";
-import Product from "@/app/product/page";
+import SignatureEdition from "../products-view/signatureedition";
 import CompanyHistory from "../about-view/about-section/CompanyHistory";
 import TestimonialsPage from "./home-section/TestimonialSection";
 import Head from "next/head";
@@ -14,7 +14,7 @@ function HomeView() {
     <div>
       <HeroSection />
       <CompanyOverview />
-      <Product />
+      <SignatureEdition/>
       <CompanyHistory />
       <TestimonialsPage />
     </div>
