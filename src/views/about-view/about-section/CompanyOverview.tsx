@@ -45,6 +45,7 @@ function CompanyOverview() {
               src={`https:${datamap.fields.companyOverviewImage.fields.file.url}`}
               width={500}
               height={500}
+              loading="lazy"
             />
           </div>
           <div className="sm:px-4 md:w-1/2 mt-4 md:mt-0 md:pr-8 lg:pr-16 text-center md:text-left font-Anek_Devanagari">

@@ -57,6 +57,7 @@ function SignatureEdition() {
                     src={`https:${datamap.fields.imageProductSection1?.fields.file.url}`}
                     width={500}
                     height={500}
+                    loading="lazy"
                   />
                 </div>
                 {/* @ts-ignore */}
@@ -89,6 +90,7 @@ function SignatureEdition() {
                     src={`https:${datamap.fields.imageProductSection2?.fields.file.url}`}
                     width={500}
                     height={500}
+                    loading="lazy"
                   />
                 </div>
                 {/* @ts-ignore */}
@@ -121,6 +123,7 @@ function SignatureEdition() {
                     src={`https:${datamap.fields.imageProductSection3?.fields.file.url}`}
                     width={500}
                     height={500}
+                    loading="lazy"
                   />
                 </div>
                 {/* @ts-ignore */}
