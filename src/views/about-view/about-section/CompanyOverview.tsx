@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useState, useEffect } from "react";
 import Head from "next/head";
@@ -24,10 +24,14 @@ function CompanyOverview() {
   }, []);
 
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-white h-full">
       <Head>
         <title>Ironclad Watch Company Overview</title>
-        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap" as="style" />
+        <link
+          rel="preload"
+          href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap"
+          as="style"
+        />
         <link rel="preload" href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" as="style" />
         <link rel="preload" href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" as="style" />
       </Head>
