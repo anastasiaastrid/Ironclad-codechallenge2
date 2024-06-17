@@ -26,10 +26,22 @@ function CompanyOverview() {
     <div className="bg-white min-h-screen">
       <Head>
         <title>Ironclad Watch Company Overview</title>
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap" as="style" />
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" as="style" />
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" as="style" />
+        {/* @ts-ignore */}
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap" media="print" onLoad="this.media='all'" />
+        {/* @ts-ignore */}
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" media="print" onLoad="this.media='all'" />
+        {/* @ts-ignore */}
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" media="print" onLoad="this.media='all'" />
       </Head>
-      <div className="max-w-6xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
         {data?.map((datamap) => (
-          // @ts-ignore
+        //@ts-ignore
+
           <div key={datamap.sys.id} className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="flex justify-center md:justify-end">
               <Image
