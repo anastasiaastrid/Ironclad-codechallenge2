@@ -24,7 +24,7 @@ function HeroSection() {
 
   return (
     <div className="grid grid-cols-1 pb-0">
-      {data.map((datamap) => (
+      {data.length > 0 && data.map((datamap) => (
         // @ts-ignore
         <div key={datamap.sys.id} className="relative">
           {/* Image Section */}
@@ -36,6 +36,8 @@ function HeroSection() {
             width={1920}
             height={1080}
             priority
+            objectFit="cover"
+            objectPosition="center"
           />
 
           {/* Text Overlay */}

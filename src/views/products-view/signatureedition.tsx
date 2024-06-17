@@ -7,10 +7,6 @@ import { client } from "@/utils/contentful";
 import { TypeBlogFields } from "@/types/contentful";
 import Link from "next/link";
 
-<Head>
-  <title>Ironclad Watch Signature Edition Products</title>
-</Head>;
-
 function SignatureEdition() {
   const [data, setData] = useState<TypeBlogFields[]>([]);
 
@@ -28,130 +24,57 @@ function SignatureEdition() {
   }, []);
 
   return (
-    <div className="bg-white">
-      {data?.map((datamap) => (
-        // @ts-ignore
-        <div
+    <div className="bg-white min-h-screen">
+      <Head>
+        <title>Ironclad Watch Signature Edition Products</title>
+      </Head>
+      <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+        {data?.map((datamap) => (
           // @ts-ignore
-          key={datamap.sys.id}
-          className="bg-zinc-900 font-Anek_Devanagari
-        pt-0 pb-5
-        "
-        >
-          <div
-            className="px-16 py-10
-          sm:px-8
-          md:px-16
-          lg:px-28 "
-          >
-            <p className="text-3xl lg:text-5xl text-white font-ZenDots">{datamap.fields.companyOverviewTitle}</p>
-            <p className="text-white font-BakbakOne tracking-widest pb-4">{datamap.fields.productTitle}</p>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="text-gray-200">
-                <div className="relative">
-                  <Image
-                    className="rounded-lg
-                    lg:px-14
-                     px-16"
-                    alt="Image"
-                    // @ts-ignore
-                    src={`https:${datamap.fields.imageProductSection1?.fields.file.url}`}
-                    width={349.2}
-                    height={488.88}
-                    loading="lazy"
-                  />
+          <div key={datamap.sys.id} className="bg-zinc-900 font-Anek_Devanagari pt-5 pb-8 px-4 sm:px-6 lg:px-8">
+            <div className="px-4 sm:px-0">
+              <p className="text-3xl lg:text-5xl text-white font-ZenDots text-center">
+                {datamap.fields.companyOverviewTitle}
+              </p>
+              <p className="text-white font-BakbakOne tracking-widest pb-4 text-center">
+                {datamap.fields.productTitle}
+              </p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 sm:px-0">
+              {Array.from({ length: 3 }).map((_, index) => (
+                <div key={index} className="text-gray-200">
+                  <div className="relative">
+                    <Image
+                      className="rounded-lg"
+                      alt={`Product Image ${index + 1}`}
+                      // @ts-ignore
+                      src={`https:${datamap.fields[`imageProductSection${index + 1}`]?.fields.file.url}`}
+                      width={500}
+                      height={500}
+                      loading="lazy"
+                    />
+                  </div>
+                  <p className="text-xl text-gray-200 font-ZenDots pt-3 text-center lg:text-left">
+                    {/* @ts-ignore */}
+                    {datamap.fields[`titleProductSection${index + 1}`]}
+                  </p>
+                  <div className="rounded-lg text-justify px-4 sm:px-0">
+                    {/* @ts-ignore */}
+                    <RichText document={datamap.fields[`productSection${index + 1}`] || ""} />
+                  </div>
+                  <div className="pt-2 px-4 sm:px-0 text-center">
+                    <Link href="/product/">
+                      <button className="px-4 py-2 font-bold text-black rounded-full bg-white hover:bg-gray-200 transition duration-300">
+                        Shop Now
+                      </button>
+                    </Link>
+                  </div>
                 </div>
-                {/* @ts-ignore */}
-                <p
-                  className="text-xl text-gray-200 font-ZenDots
-                lg: pt-3 lg:text-2xl lg:px-5 px-16"
-                >
-                  {/* @ts-ignore */}
-                  {datamap.fields.titleProductSection1}
-                </p>
-                <div className="rounded-lg text-justify lg:px-5 px-16">
-                  <RichText document={datamap.fields.productSection1 || ""} />
-                </div>
-                <div className="lg:pb-4 pt-2 lg:px-5 px-14">
-                  <Link href="/product/">
-                    <button className="px-4 py-2 font-bold text-black rounded-full bg-white hover:bg-gray-200 transition duration-300">
-                      Shop Now
-                    </button>
-                  </Link>
-                </div>
-              </div>
-
-              <div className="text-gray-200">
-                <div className="relative">
-                  <Image
-                    className="rounded-lg
-                    lg:px-14
-                     px-16"
-                    alt="Image"
-                    // @ts-ignore
-                    src={`https:${datamap.fields.imageProductSection2?.fields.file.url}`}
-                    width={349.2}
-                    height={488.88}
-                    loading="lazy"
-                  />
-                </div>
-                {/* @ts-ignore */}
-                <p
-                  className="text-xl text-gray-200 font-ZenDots
-                lg: pt-3 lg:text-2xl lg:px-5 px-16"
-                >
-                  {/* @ts-ignore */}
-                  {datamap.fields.titleProductSection2}
-                </p>
-                <div className="rounded-lg text-justify lg:px-5 px-16">
-                  <RichText document={datamap.fields.productSection2 || ""} />
-                </div>
-                <div className="lg:pb-4 pt-2 lg:px-5 px-14">
-                  <Link href="/product/">
-                    <button className="px-4 py-2 font-bold text-black rounded-full bg-white hover:bg-gray-200 transition duration-300">
-                      Shop Now
-                    </button>
-                  </Link>
-                </div>
-              </div>
-
-              <div className="text-gray-200">
-                <div className="relative">
-                  <Image
-                    className="rounded-lg
-                    lg:px-14
-                     px-16"
-                    alt="Image"
-                    // @ts-ignore
-                    src={`https:${datamap.fields.imageProductSection3?.fields.file.url}`}
-                    width={349.2}
-                    height={488.88}
-                    loading="lazy"
-                  />
-                </div>
-                {/* @ts-ignore */}
-                <p
-                  className="text-xl text-gray-200 font-ZenDots
-                lg: pt-3 lg:text-2xl lg:px-5 px-16"
-                >
-                  {/* @ts-ignore */}
-                  {datamap.fields.titleProductSection3}
-                </p>
-                <div className="rounded-lg text-justify lg:px-5 px-16">
-                  <RichText document={datamap.fields.productSection3 || ""} />
-                </div>
-                <div className="lg:pb-4 pt-2 lg:px-5 px-14">
-                  <Link href="/product/">
-                    <button className="px-4 py-2 font-bold text-black rounded-full bg-white hover:bg-gray-200 transition duration-300">
-                      Shop Now
-                    </button>
-                  </Link>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 }
