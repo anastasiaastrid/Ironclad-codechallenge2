@@ -1,3 +1,4 @@
+"use client";
 import { useState, useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
@@ -30,7 +31,11 @@ function SignatureEdition() {
       <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
         {data?.map((datamap) => (
           // @ts-ignore
-          <div key={datamap.sys.id} className="bg-zinc-900 text-white font-Anek_Devanagari pt-5 pb-8 px-4 sm:px-6 lg:px-8">
+          <div
+          // @ts-ignore
+            key={datamap.sys.id}
+            className="bg-zinc-900 text-white font-Anek_Devanagari pt-5 pb-8 px-4 sm:px-6 lg:px-8"
+          >
             <div className="px-4 sm:px-0">
               <p className="text-3xl lg:text-5xl text-white font-ZenDots text-center">
                 {datamap.fields.companyOverviewTitle}
@@ -54,7 +59,7 @@ function SignatureEdition() {
                     />
                   </div>
                   <p className="text-xl text-gray-200 font-ZenDots pt-3 text-center lg:text-left">
-                   {/* @ts-ignore */}
+                    {/* @ts-ignore */}
                     {datamap.fields[`titleProductSection${index}`]}
                   </p>
                   <div className="rounded-lg text-justify px-4 sm:px-0">
