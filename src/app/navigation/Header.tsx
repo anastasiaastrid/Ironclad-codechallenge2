@@ -17,7 +17,7 @@ function Header() {
     >
       <Link href="/">
         <div className="flex items-center space-x-2 cursor-pointer">
-          <Image src="/static/logo/ironcladwatcheslogo-01-white-01.svg" alt="Ironclad Watches" width={50} height={50} />
+          <Image src="/static/logo/ironcladwatcheslogo-01-white-01-01.png" alt="Ironclad Watches" width={50} height={50} />
           <h1 className="text-xl font-ZenDots">IRONCLAD</h1>
           <h1 className="text-xl font-BakbakOne hidden md:block sm:block lg:block ">TIMELESS TOUGHNESS</h1>
         </div>

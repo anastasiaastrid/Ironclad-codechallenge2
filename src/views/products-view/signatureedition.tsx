@@ -55,8 +55,8 @@ function SignatureEdition() {
                     alt="Image"
                     // @ts-ignore
                     src={`https:${datamap.fields.imageProductSection1?.fields.file.url}`}
-                    width={1000}
-                    height={1000}
+                    width={500}
+                    height={500}
                   />
                 </div>
                 {/* @ts-ignore */}
@@ -87,8 +87,8 @@ function SignatureEdition() {
                     alt="Image"
                     // @ts-ignore
                     src={`https:${datamap.fields.imageProductSection2?.fields.file.url}`}
-                    width={1000}
-                    height={1000}
+                    width={500}
+                    height={500}
                   />
                 </div>
                 {/* @ts-ignore */}
@@ -119,8 +119,8 @@ function SignatureEdition() {
                     alt="Image"
                     // @ts-ignore
                     src={`https:${datamap.fields.imageProductSection3?.fields.file.url}`}
-                    width={1000}
-                    height={1000}
+                    width={500}
+                    height={500}
                   />
                 </div>
                 {/* @ts-ignore */}

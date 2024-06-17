@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/static/logo/ironcladwatcheslogo-01.svg" />
+        <link rel="icon" href="/static/logo/ironcladwatcheslogo-01-01.png" />
       </head>
 
       <body className={inter.className}>

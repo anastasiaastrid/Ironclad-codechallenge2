@@ -8,7 +8,7 @@ function Footer() {
         <Link href="/" passHref>
           <div className="flex items-center space-x-2 cursor-pointer">
             <Image
-              src="/static/logo/ironcladwatcheslogo-01-white-01.svg"
+              src="/static/logo/ironcladwatcheslogo-01-white-01-01.png"
               alt="Ironclad Watches"
               width={50}
               height={50}

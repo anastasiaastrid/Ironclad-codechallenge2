@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 function Home() {
   return (
-    <div>
+    <div className="">
       <HomeView />
     </div>
   );
