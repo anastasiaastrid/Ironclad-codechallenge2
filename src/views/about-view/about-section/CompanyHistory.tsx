@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState, useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
@@ -32,7 +32,7 @@ function CompanyHistory() {
         <div key={datamap.sys.id} className="my-1 md:flex md:items-center justify-center lg:flex lg:item-center">
           <div className="md:w-1/2 sm:p-4 md:px-8 lg:px-12 md:pb-2">
             <Image
-              className="object-cover rounded-md"
+              className="rounded-md"
               alt="Image"
               // @ts-ignore
               src={`https:${datamap.fields.companyHistoryImage.fields.file.url}`}

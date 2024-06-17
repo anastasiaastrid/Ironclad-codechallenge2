@@ -38,8 +38,8 @@ function SignatureEdition() {
                   alt="Image"
                   // @ts-ignore
                   src={`https:${datamap.fields.imageProductSection1.fields.file.url}`}
-                  width={1080}
-                  height={1080}
+                  width={500}
+                  height={500}
                 />
                 {/* @ts-ignore */}
                 <p className="pt-5 text-xl lg:text-2xl text-gray-200 font-ZenDots">{datamap.fields.titleProductSection1}</p>
@@ -61,8 +61,8 @@ function SignatureEdition() {
                   alt="Image"
                   // @ts-ignore
                   src={`https:${datamap.fields.imageProductSection2.fields.file.url}`}
-                  width={1080}
-                  height={1080}
+                  width={500}
+                  height={500}
                 />
                 {/* @ts-ignore */}
                 <p className="pt-5 text-xl lg:text-2xl text-gray-200 font-ZenDots">{datamap.fields.titleProductSection2}</p>
@@ -84,8 +84,8 @@ function SignatureEdition() {
                   alt="Image"
                   // @ts-ignore
                   src={`https:${datamap.fields.imageProductSection3.fields.file.url}`}
-                  width={1080}
-                  height={1080}
+                  width={500}
+                  height={500}
                 />
                 {/* @ts-ignore */}
                 <p className="pt-5 text-xl lg:text-2xl text-gray-200 font-ZenDots">{datamap.fields.titleProductSection3}</p>
