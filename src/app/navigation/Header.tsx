@@ -17,7 +17,7 @@ function Header() {
     >
       <Link href="/">
         <div className="flex items-center space-x-2 cursor-pointer">
-          <Image src="/static/logo/ironcladwatcheslogo-01-white-01-01.png" alt="Ironclad Watches" width={50} height={50} />
+          <Image src="/static/logo/ironcladwatcheslogo-01-white-01-01.png" alt="Logo" width={50} height={50} />
           <h1 className="text-xl font-ZenDots">IRONCLAD</h1>
           <h1 className="text-xl font-BakbakOne hidden md:block sm:block lg:block ">TIMELESS TOUGHNESS</h1>
         </div>
@@ -25,7 +25,11 @@ function Header() {
 
       {/* Hamburger menu */}
       <div className="block lg:hidden">
-        <button onClick={toggleMenu} className="text-white focus:outline-none p-1">
+        <button
+          onClick={toggleMenu}
+          className="text-white focus:outline-none p-3" // increased padding for better touch target
+          aria-label={isOpen ? "Close menu" : "Open menu"}
+        >
           <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             {isOpen ? (
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />

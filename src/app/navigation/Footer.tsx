@@ -7,33 +7,28 @@ function Footer() {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
         <Link href="/" passHref>
           <div className="flex items-center space-x-2 cursor-pointer">
-            <Image
-              src="/static/logo/ironcladwatcheslogo-01-white-01-01.png"
-              alt="Ironclad Watches"
-              width={50}
-              height={50}
-            />
+            <Image src="/static/logo/ironcladwatcheslogo-01-white-01-01.png" alt="Logo" width={50} height={50} />
             <h1 className="text-xl font-bold">Ironclad Watches</h1>
           </div>
         </Link>
         <nav className="flex flex-wrap justify-center md:justify-end gap-x-6 mt-4 md:mt-0">
           <Link href="/" passHref>
-            <div className="text-white font-BakbakOne tracking-wide hover:underline hover:text-white cursor-pointer">
+            <div className="text-white font-BakbakOne tracking-wide hover:underline hover:text-gray-300 cursor-pointer">
               HOME
             </div>
           </Link>
           <Link href="/product" passHref>
-            <div className="text-white font-BakbakOne tracking-wide hover:underline hover:text-white cursor-pointer">
+            <div className="text-white font-BakbakOne tracking-wide hover:underline hover:text-gray-300 cursor-pointer">
               PRODUCTS
             </div>
           </Link>
           <Link href="/about" passHref>
-            <div className="text-white font-BakbakOne tracking-wide hover:underline hover:text-white cursor-pointer">
+            <div className="text-white font-BakbakOne tracking-wide hover:underline hover:text-gray-300 cursor-pointer">
               ABOUT
             </div>
           </Link>
           <Link href="/team" passHref>
-            <div className="text-white font-BakbakOne tracking-wide hover:underline hover:text-white cursor-pointer">
+            <div className="text-white font-BakbakOne tracking-wide hover:underline hover:text-gray-300 cursor-pointer">
               TEAM
             </div>
           </Link>
