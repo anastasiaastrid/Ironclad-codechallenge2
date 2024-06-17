@@ -23,7 +23,7 @@ function CompanyOverview() {
   }, []);
 
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-white">
       <Head>
         <title>Ironclad Watch Company Overview</title>
         <link rel="preload" href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap" as="style" />
