@@ -33,8 +33,8 @@ function HeroSection() {
             alt="Image"
             // @ts-ignore
             src={`https:${datamap.fields.articleImage.fields.file.url}`}
-            width={500}
-            height={500}
+            width={1920}
+            height={1080}
             priority
           />
 
