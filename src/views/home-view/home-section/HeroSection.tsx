@@ -30,13 +30,11 @@ function HeroSection() {
           <Image
             className="object-cover"
             alt="Image"
-            //  @ts-ignore
+            // @ts-ignore
             src={`https:${datamap.fields.articleImage.fields.file.url}`}
             width={1920}
             height={1080}
-            sizes="(max-width: 600px) 480px, 
-               (max-width: 1200px) 800px, 
-               1200px"
+            sizes="(max-width: 600px) 480px, (max-width: 1200px) 800px, 1200px"
             priority
           />
           <div className="absolute inset-0 flex flex-col justify-center items-start text-white bg-black bg-opacity-50 p-4 lg:pl-40 lg:pt-20 md:pt-16 sm:pt-12 xs:pt-10">

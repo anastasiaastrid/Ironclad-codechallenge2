@@ -29,7 +29,11 @@ function CompanyOverview() {
       </Head>
       {data?.map((datamap) => (
         //@ts-ignore
-        <div key={datamap.sys.id} className="my-1 md:flex md:items-center justify-center lg:flex lg:item-center">
+        <div
+        //@ts-ignore
+          key={datamap.sys.id}
+          className="my-1 md:flex md:items-center justify-center lg:px-16 lg:flex lg:item-center"
+        >
           <div className="md:w-1/2 sm:p-4 md:px-8 lg:px-12 md:pb-2">
             <Image
               className="rounded-md"
@@ -42,7 +46,7 @@ function CompanyOverview() {
           </div>
           <div className="sm:px-4 md:w-1/2 mt-4 md:mt-0 md:pr-8 lg:pr-16 text-center md:text-left font-Anek_Devanagari">
             <div className="text-sm text-gray-900 leading-7 font-semibold text-justify">
-              <p className="text-3xl text-black font-ZenDots">{datamap.fields.companyOverviewTitle}</p>
+              <p className="text-3xl text-black font-ZenDots">{datamap.fields.title}</p>
               <p className="text-xl pb-2 text-black font-BakbakOne tracking-widest">{datamap.fields.tagLine}</p>
               <RichText document={datamap.fields.aboutText} />
             </div>

@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import RichText from "@/views/richtext/richText";
@@ -29,7 +29,7 @@ function CompanyHistory() {
       </Head>
       {data?.map((datamap) => (
         // @ts-ignore
-        <div key={datamap.sys.id} className="my-1 md:flex md:items-center justify-center lg:flex lg:item-center">
+        <div key={datamap.sys.id} className="my-1 md:flex md:items-center justify-center lg:flex lg:px-16 lg:item-center">
           <div className="md:w-1/2 sm:p-4 md:px-8 lg:px-12 md:pb-2">
             <Image
               className="rounded-md"
