@@ -23,7 +23,7 @@ function CompanyHistory() {
   }, []);
 
   return (
-    <div className="bg-white">
+    <div className="bg-white min-h-screen">
       <Head>
         <title>Ironclad Watch Company History</title>
       </Head>

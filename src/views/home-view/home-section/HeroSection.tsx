@@ -1,11 +1,12 @@
-"use client";
+"use client"
+
 import { useEffect, useState } from "react";
-import { client } from "@/utils/contentful";
-import { TypeBlogFields } from "@/types/contentful";
+import Head from "next/head";
 import Image from "next/image";
 import RichText from "@/views/richtext/richText";
 import Link from "next/link";
-import Head from "next/head";
+import { client } from "@/utils/contentful";
+import { TypeBlogFields } from "@/types/contentful";
 
 function HeroSection() {
   const [data, setData] = useState<TypeBlogFields[]>([]);
@@ -26,13 +27,8 @@ function HeroSection() {
   return (
     <div className="grid grid-cols-1 pb-0">
       <Head>
-        <link
-          rel="preload"
-          href="/fonts/Anek-Devanagari-Regular.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
+        {/* Preload fonts */}
+        <link rel="preload" href="/fonts/Anek-Devanagari-Regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <link rel="preload" href="/fonts/BakbakOne-Regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <link rel="preload" href="/fonts/ZenDots-Regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
       </Head>
@@ -40,7 +36,7 @@ function HeroSection() {
         data.map((datamap) => (
           // @ts-ignore
           <div key={datamap.sys.id} className="relative">
-            {/* Image Section */}
+            {/* Ensure width and height are specified for the Image */}
             <Image
               className="h-96 w-full object-cover lg:object-cover lg:h-full lg:w-full md:object-cover md:h-full md:w-full sm:object-cover sm:h-full sm:w-full"
               alt="Image"
@@ -51,7 +47,6 @@ function HeroSection() {
               priority={true}
             />
 
-            {/* Text Overlay */}
             <div className="absolute inset-0 flex flex-col justify-center px-10 py-10 lg:pl-28 lg:pr-155px bg-black bg-opacity-50 text-white">
               <p className="text-4xl lg:text-7xl font-ZenDots">{datamap.fields.title}</p>
               <p className="pt-4 lg:pt-6 text-lg lg:text-2xl tracking-wide font-BakbakOne">{datamap.fields.summary}</p>

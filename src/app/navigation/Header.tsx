@@ -1,4 +1,5 @@
 "use client";
+
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -15,13 +16,20 @@ function Header() {
     <header className="sticky top-0 z-50 flex items-center justify-between p-7 lg:py-5 lg:px-20 bg-black text-white">
       <Head>
         <link rel="preload" href="/static/logo/ironcladwatcheslogo-01-white-01-01.png" as="image" />
+        {/* Add preload for fonts */}
         <link rel="preload" href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" as="style" />
         <link rel="preload" href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" as="style" />
       </Head>
 
       <Link href="/">
         <div className="flex items-center space-x-2 cursor-pointer">
-          <Image src="/static/logo/ironcladwatcheslogo-01-white-01-01.png" alt="Logo" width={50} height={50} />
+          {/* Ensure width and height are specified for the logo */}
+          <Image
+            src="/static/logo/ironcladwatcheslogo-01-white-01-01.png"
+            alt="Logo"
+            width={50}
+            height={50}
+          />
           <h1 className="text-xl font-ZenDots">IRONCLAD</h1>
         </div>
       </Link>
