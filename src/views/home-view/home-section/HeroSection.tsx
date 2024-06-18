@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Head from "next/head";
 import Image from "next/image";
 import RichText from "@/views/richtext/richText";
 import Link from "next/link";
@@ -26,23 +25,10 @@ function HeroSection() {
 
   return (
     <div className="grid grid-cols-1 pb-0 max-w-full max-h-full mx-auto my-auto">
-      <Head>
-        {/* Preload fonts */}
-        <link
-          rel="preload"
-          href="/fonts/Anek-Devanagari-Regular.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
-        <link rel="preload" href="/fonts/BakbakOne-Regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
-        <link rel="preload" href="/fonts/ZenDots-Regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
-      </Head>
       {data.length > 0 &&
         data.map((datamap) => (
           // @ts-ignore
           <div key={datamap.sys.id} className="relative">
-            {/* Ensure width and height are specified for the Image */}
             <Image
               className="h-96 w-full object-cover lg:object-cover lg:h-full lg:w-full md:object-cover md:h-full md:w-full sm:object-cover sm:h-full sm:w-full"
               alt="Image"
