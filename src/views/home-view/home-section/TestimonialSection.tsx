@@ -1,7 +1,7 @@
 "use client";
-import { useEffect, useState } from 'react';
-import Head from 'next/head';
-import { Testimonial } from '@/type/testimonial';
+import { useEffect, useState } from "react";
+import Head from "next/head";
+import { Testimonial } from "@/type/testimonial";
 
 const TestimonialsPage: React.FC = () => {
   const [testimonials, setTestimonials] = useState<Testimonial[]>([]);
@@ -54,7 +54,17 @@ const TestimonialsPage: React.FC = () => {
       {showTestimonials && (
         <>
           <h1 className="text-3xl font-bold text-center mb-8 text-black">Ironclad Wearers</h1>
-          {!isLoadingTestimonials && (
+          {isLoadingTestimonials ? (
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {Array(3).fill(0).map((_, index) => (
+                <div key={index} className="border rounded-lg p-4 flex flex-col items-center">
+                  <div className="rounded-full w-24 h-24 mb-4 bg-gray-200 animate-pulse"></div>
+                  <div className="w-full h-6 bg-gray-200 animate-pulse mb-2"></div>
+                  <div className="w-1/2 h-6 bg-gray-200 animate-pulse"></div>
+                </div>
+              ))}
+            </div>
+          ) : (
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {testimonials.map((testimonial, index) => (
                 <div key={index} className="border rounded-lg p-4 flex flex-col items-center">
@@ -62,6 +72,7 @@ const TestimonialsPage: React.FC = () => {
                     src={testimonial.picture}
                     alt={testimonial.name}
                     className="rounded-full w-24 h-24 mb-4 object-cover"
+                    loading="lazy"
                   />
                   <p className="text-sm text-gray-900 leading-6 text-center mb-2">{testimonial.testimonial}</p>
                   <p className="text-sm text-gray-700 font-semibold">{testimonial.name}</p>
