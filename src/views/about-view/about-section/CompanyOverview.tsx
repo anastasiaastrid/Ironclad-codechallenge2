@@ -27,9 +27,7 @@ function CompanyOverview() {
   return (
     <div className="bg-white min-h-full w-full">
       <Head>
-        <title>Ironclad Watch Company History</title>
-        <link rel="preload" href="/fonts/ZenDots-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
-        <link rel="preload" href="/fonts/BakbakOne-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
+        <title>Ironclad Watch Company Overview</title>
       </Head>
       {showContent && (
         <div className="max-w-full max-h-full mx-auto my-auto py-5 px-4 sm:px-6">
@@ -47,18 +45,17 @@ function CompanyOverview() {
               <div className="flex justify-center col-span-1">
                 <Image
                   className="rounded-md"
-                  alt="Company History Image"
+                  alt="Company Overview Image"
                   // @ts-ignore
                   src={`https:${datamap.fields.companyOverviewImage.fields.file.url}`}
                   width={374}
                   height={441}
-                  sizes="100vw"
                 />
               </div>
               <div className="col-span-2 text-center md:text-left lg:ml-8 mt-5 lg:mt-0">
                 <p className="text-3xl lg:text-5xl text-black font-ZenDots">{datamap.fields.title}</p>
                 <p className="text-xl lg:text-2xl pb-4 text-black font-BakbakOne tracking-widest">
-                  {datamap.fields.tagLine}
+                  {datamap.fields.companyOverviewTitle}
                 </p>
                 <div className="text-lg lg:text-base text-gray-900 leading-7 text-justify">
                   <RichText document={datamap.fields.aboutText} />

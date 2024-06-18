@@ -27,6 +27,7 @@ function HeroSection() {
   return (
     <div className="grid grid-cols-1 pb-0 max-w-full max-h-full mx-auto my-auto">
       <Head>
+        <title>Ironclad Watch Testimonials</title>
         <link rel="preload" href="/fonts/ZenDots-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
         <link rel="preload" href="/fonts/BakbakOne-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
       </Head>
@@ -40,7 +41,7 @@ function HeroSection() {
               // @ts-ignore
               src={`https:${datamap.fields.articleImage.fields.file.url}`}
               width={1920}
-              height={850}
+              height={1080}
               priority={true}
             />
 
