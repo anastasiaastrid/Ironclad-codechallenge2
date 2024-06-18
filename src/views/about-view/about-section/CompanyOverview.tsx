@@ -1,5 +1,4 @@
 "use client";
-
 import { useState, useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
@@ -24,31 +23,32 @@ function CompanyOverview() {
   }, []);
 
   return (
-    <div className="bg-white h-full w-full">
+    <div className="bg-white min-h-full w-full">
       <Head>
-        <title>Ironclad Watch Company Overview</title>
-        <link
-          rel="preload"
-          href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap"
-          as="style"
-        />
-        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" as="style" />
-        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" as="style" />
+        <title>Ironclad Watch Company History</title>
       </Head>
-      <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-full max-h-full my-auto mx-auto py-5 px-4 sm:px-6 lg:px-20">
         {data?.map((datamap) => (
           // @ts-ignore
-          <div key={datamap.sys.id} className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div className="flex justify-center md:justify-end">
+          <div
+          // @ts-ignore
+            key={datamap.sys.id}
+            className="
+          grid grid-cols-1 py-5 px-7 items-center
+          md:grid-cols-1 
+          lg:grid-cols-2
+
+          "
+          >
+            <div className="flex justify-center">
               <Image
                 className="rounded-md"
-                alt="Company Overview Image"
+                alt="Company History Image"
                 // @ts-ignore
                 src={`https:${datamap.fields.companyOverviewImage.fields.file.url}`}
-                width={500}
-                height={500}
+                width={374}
+                height={441}
                 sizes="100vw"
-                loading="lazy"
               />
             </div>
             <div className="text-center md:text-left">
@@ -56,7 +56,7 @@ function CompanyOverview() {
               <p className="text-xl lg:text-2xl pb-4 text-black font-BakbakOne tracking-widest">
                 {datamap.fields.tagLine}
               </p>
-              <div className="text-lg lg:text-base text-gray-900 leading-7 text-justify">
+              <div className="lg:pr-40 text-lg lg:text-base text-gray-900 leading-7 text-justify">
                 <RichText document={datamap.fields.aboutText} />
               </div>
             </div>

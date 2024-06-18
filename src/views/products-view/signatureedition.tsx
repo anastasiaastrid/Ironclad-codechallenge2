@@ -24,7 +24,7 @@ function SignatureEdition() {
   }, []);
 
   return (
-    <div className="bg-white min-h-full">
+    <div className="bg-white min-h-full w-full">
       <Head>
         <title>Ironclad Watch Signature Edition Products</title>
         <link
@@ -32,7 +32,7 @@ function SignatureEdition() {
           rel="stylesheet"
         />
       </Head>
-      <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-full max-h-full my-auto mx-auto py-5 px-4 sm:px-6 lg:px-20">
         {data?.map((datamap) => (
           <div
             // @ts-ignore
