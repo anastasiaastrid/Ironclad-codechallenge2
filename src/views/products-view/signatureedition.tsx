@@ -42,9 +42,11 @@ function SignatureEdition() {
               className="bg-zinc-900 text-white font-Anek_Devanagari pt-12 pb-8 px-4 sm:px-6 lg:px-8 mb-8"
             >
               <div className="px-4 sm:px-0">
-                <p className="text-3xl lg:text-5xl text-white font-ZenDots text-center mb-6">{datamap.fields.title}</p>
+                <p className="text-3xl lg:text-5xl text-white font-ZenDots text-center mb-6">
+                  {datamap.fields.companyOverviewTitle}
+                </p>
                 <p className="text-white font-BakbakOne tracking-widest pb-4 text-center mb-8">
-                  {datamap.fields.productTitle}
+                  {datamap.fields.companyOverviewTitle}
                 </p>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 sm:px-0">
