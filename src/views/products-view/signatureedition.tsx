@@ -1,4 +1,3 @@
-"use client"
 import { useState, useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
@@ -17,7 +16,7 @@ function SignatureEdition() {
         const response = await client.getEntries<TypeBlogFields>();
         //@ts-ignore
         setData(response?.items || []);
-        setShowContent(true); // Show content after fetching data
+        setShowContent(true); 
       } catch (err) {
         console.log(err);
       }
@@ -49,8 +48,7 @@ function SignatureEdition() {
         <div className="max-w-full my-auto py-5 px-4 sm:px-6 lg:px-8">
           {data.map((datamap) => (
             <div
-        //@ts-ignore
-
+              //@ts-ignore
               key={datamap.sys.id}
               className="bg-zinc-900 text-white font-Anek_Devanagari py-12 px-4 sm:px-6 lg:px-8 mb-8 rounded-lg"
             >
@@ -66,13 +64,12 @@ function SignatureEdition() {
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 sm:px-0">
                 {/* Product Section 1 */}
                 <div className="text-gray-200 flex flex-col items-center justify-center">
-                  <div className="relative sm:h-64 md:h-80 lg:h-96 h-[75px] w-[108px] lg:w-full">
+                  <div className="relative sm:h-96 md:h-120 lg:h-144 h-[302px] w-[434px] lg:w-full">
                     <div className="absolute inset-0 flex justify-center items-center">
                       <Image
                         className="rounded-lg"
                         alt={`Product Image 1`}
-        //@ts-ignore
-
+                        //@ts-ignore
                         src={`https:${datamap.fields.imageProductSection1?.fields.file.url}`}
                         layout="fill"
                         objectFit="cover"
@@ -81,8 +78,7 @@ function SignatureEdition() {
                     </div>
                   </div>
                   <p className="text-xl text-gray-200 font-ZenDots pt-4 text-center lg:pt-8 mb-4">
-        {/*@ts-ignore*/}
-
+                    {/* @ts-ignore */}
                     {datamap.fields.titleProductSection1}
                   </p>
                   <div className="rounded-lg text-justify px-4 sm:px-0 mb-4">
@@ -97,7 +93,7 @@ function SignatureEdition() {
 
                 {/* Product Section 2 */}
                 <div className="text-gray-200 flex flex-col items-center justify-center">
-                  <div className="relative sm:h-64 md:h-80 lg:h-96 h-[75px] w-[108px] lg:w-full">
+                  <div className="relative sm:h-96 md:h-120 lg:h-144 h-[302px] w-[434px] lg:w-full">
                     <div className="absolute inset-0 flex justify-center items-center">
                       <Image
                         className="rounded-lg"
@@ -111,7 +107,7 @@ function SignatureEdition() {
                     </div>
                   </div>
                   <p className="text-xl text-gray-200 font-ZenDots pt-4 text-center lg:pt-8 mb-4">
-                    {/*@ts-ignore*/}
+                    {/* @ts-ignore */}
                     {datamap.fields.titleProductSection2}
                   </p>
                   <div className="rounded-lg text-justify px-4 sm:px-0 mb-4">
@@ -126,7 +122,7 @@ function SignatureEdition() {
 
                 {/* Product Section 3 */}
                 <div className="text-gray-200 flex flex-col items-center justify-center">
-                  <div className="relative sm:h-64 md:h-80 lg:h-96 h-[75px] w-[108px] lg:w-full">
+                  <div className="relative sm:h-96 md:h-120 lg:h-144 h-[302px] w-[434px] lg:w-full">
                     <div className="absolute inset-0 flex justify-center items-center">
                       <Image
                         className="rounded-lg"
@@ -140,7 +136,7 @@ function SignatureEdition() {
                     </div>
                   </div>
                   <p className="text-xl text-gray-200 font-ZenDots pt-4 text-center lg:pt-8 mb-4">
-                    {/*@ts-ignore*/}
+                    {/* @ts-ignore */}
                     {datamap.fields.titleProductSection3}
                   </p>
                   <div className="rounded-lg text-justify px-4 sm:px-0 mb-4">
