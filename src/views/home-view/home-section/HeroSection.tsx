@@ -36,7 +36,7 @@ function HeroSection() {
           // @ts-ignore
           <div key={datamap.sys.id} className="relative">
             <Image
-              className="w-[449px] h-[486px] object-cover lg:object-cover lg:h-full lg:w-full md:object-cover md:h-full md:w-full sm:object-cover sm:h-full sm:w-full"
+              className="w-[404.1px] h-[437.4px] object-cover lg:object-cover lg:h-full lg:w-full md:object-cover md:h-full md:w-full sm:object-cover sm:h-full sm:w-full"
               alt="Image"
               // @ts-ignore
               src={`https:${datamap.fields.articleImage.fields.file.url}`}
