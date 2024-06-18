@@ -24,7 +24,7 @@ function CompanyOverview() {
   }, []);
 
   return (
-    <div className="bg-white h-full">
+    <div className="bg-white h-full w-full">
       <Head>
         <title>Ironclad Watch Company Overview</title>
         <link
