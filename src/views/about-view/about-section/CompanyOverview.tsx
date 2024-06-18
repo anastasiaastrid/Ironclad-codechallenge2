@@ -8,6 +8,8 @@ import { TypeBlogFields } from "@/types/contentful";
 
 function CompanyOverview() {
   const [data, setData] = useState<TypeBlogFields[]>([]);
+  const [showContent, setShowContent] = useState(false);
+
 
   useEffect(() => {
     async function fetchData() {
@@ -15,6 +17,7 @@ function CompanyOverview() {
         const response = await client.getEntries<TypeBlogFields>();
         // @ts-ignore
         setData(response?.items || []);
+        setShowContent(true); 
       } catch (err) {
         console.log(err);
       }
@@ -26,6 +29,20 @@ function CompanyOverview() {
     <div className="bg-white min-h-full w-full">
       <Head>
         <title>Ironclad Watch Company History</title>
+        <link
+          rel="preload"
+          href="/fonts/ZenDots-Regular.ttf"
+          as="font"
+          type="font/ttf"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/BakbakOne-Regular.ttf"
+          as="font"
+          type="font/ttf"
+          crossOrigin="anonymous"
+        />
       </Head>
       <div className="max-w-full max-h-full mx-auto my-auto py-5 px-4 sm:px-6">
   {data?.map((datamap) => (
