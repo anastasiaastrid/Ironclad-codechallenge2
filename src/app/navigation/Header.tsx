@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Head from "next/head";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,6 +14,12 @@ function Header() {
 
   return (
     <header className="sticky top-0 z-50 flex items-center justify-between max-w-full max-h-full mx-auto my-auto py-5 px-4 sm:px-6 bg-black text-white">
+      <Head>
+        <title>Ironclad Watch Testimonials</title>
+        <link rel="preload" href="/fonts/ZenDots-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
+        <link rel="preload" href="/fonts/BakbakOne-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
+      </Head>
+      
       <Link href="/">
         <div className="flex items-center space-x-2 cursor-pointer">
           <Image src="/static/logo/ironcladwatcheslogo-01-white-01-01.png" alt="Logo" width={50} height={50} />
