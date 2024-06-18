@@ -43,7 +43,7 @@ function SignatureEdition() {
             >
               <div className="px-4 sm:px-0">
                 <p className="text-3xl lg:text-5xl text-white font-ZenDots text-center mb-6">
-                  {datamap.fields.companyOverviewTitle}
+                  {datamap.fields.title}
                 </p>
                 <p className="text-white font-BakbakOne tracking-widest pb-4 text-center mb-8">
                   {datamap.fields.productTitle}
