@@ -45,7 +45,7 @@ function HeroSection() {
               priority={true}
             />
 
-            <div className="absolute inset-0 flex flex-col justify-center px-10 py-10 lg:pl-28 lg:pr-155px bg-black bg-opacity-50 text-white">
+            <div className="absolute inset-0 flex flex-col justify-center px-10 py-10 lg:pl-28 lg:p-10 lg:pr-155px bg-black bg-opacity-50 text-white">
               <p className="text-4xl lg:text-7xl font-ZenDots">{datamap.fields.title}</p>
               <p className="pt-4 lg:pt-6 text-lg lg:text-2xl tracking-wide font-BakbakOne">{datamap.fields.summary}</p>
               <div className="font-Anek_Devanagari pt-4 lg:pt-6 text-lg lg:text-lg">

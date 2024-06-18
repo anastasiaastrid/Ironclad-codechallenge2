@@ -20,14 +20,14 @@ function Header() {
         <link rel="preload" href="/fonts/BakbakOne-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
       </Head>
       
-      <Link href="/">
+      <Link href="/" onClick={toggleMenu}>
         <div className="flex items-center space-x-2 cursor-pointer">
           <Image src="/static/logo/ironcladwatcheslogo-01-white-01-01.png" alt="Logo" width={50} height={50} />
           <h1 className="text-xl font-ZenDots">IRONCLAD</h1>
         </div>
       </Link>
 
-      {/* Hamburger*/}
+      {/* Hamburger */}
       <div className="block lg:hidden">
         <button
           onClick={toggleMenu}
@@ -46,35 +46,23 @@ function Header() {
 
       {/* Menu */}
       <nav className={`lg:flex lg:items-center lg:space-x-4 ${isOpen ? "block" : "hidden"}`}>
-        <Link href="/">
-          <div
-            onClick={toggleMenu}
-            className="text-white font-BakbakOne tracking-wide flex items-center hover:underline hover:text-white cursor-pointer py-2"
-          >
+        <Link href="/" onClick={toggleMenu}>
+          <div className="text-white font-BakbakOne tracking-wide flex items-center hover:underline hover:text-white cursor-pointer py-2">
             HOME
           </div>
         </Link>
-        <Link href="/product">
-          <div
-            onClick={toggleMenu}
-            className="text-white font-BakbakOne tracking-wide flex items-center hover:underline hover:text-white cursor-pointer py-2"
-          >
+        <Link href="/product" onClick={toggleMenu}>
+          <div className="text-white font-BakbakOne tracking-wide flex items-center hover:underline hover:text-white cursor-pointer py-2">
             PRODUCTS
           </div>
         </Link>
-        <Link href="/about">
-          <div
-            onClick={toggleMenu}
-            className="text-white font-BakbakOne tracking-wide flex items-center hover:underline hover:text-white cursor-pointer py-2"
-          >
+        <Link href="/about" onClick={toggleMenu}>
+          <div className="text-white font-BakbakOne tracking-wide flex items-center hover:underline hover:text-white cursor-pointer py-2">
             ABOUT
           </div>
         </Link>
-        <Link href="/team">
-          <div
-            onClick={toggleMenu}
-            className="text-white font-BakbakOne tracking-wide flex items-center hover:underline hover:text-white cursor-pointer py-2"
-          >
+        <Link href="/team" onClick={toggleMenu}>
+          <div className="text-white font-BakbakOne tracking-wide flex items-center hover:underline hover:text-white cursor-pointer py-2">
             TEAM
           </div>
         </Link>

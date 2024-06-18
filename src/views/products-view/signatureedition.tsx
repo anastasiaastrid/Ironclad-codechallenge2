@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState, useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
@@ -36,7 +36,11 @@ function SignatureEdition() {
         <div className="max-w-full my-auto mx-auto py-5 px-4 sm:px-6">
           {data.map((datamap) => (
             // @ts-ignore
-            <div key={datamap.sys.id} className="bg-zinc-900 text-white font-Anek_Devanagari pt-12 pb-8 px-4 sm:px-6 lg:px-8 mb-8">
+            <div
+            // @ts-ignore
+              key={datamap.sys.id}
+              className="bg-zinc-900 text-white font-Anek_Devanagari pt-12 pb-8 px-4 sm:px-6 lg:px-8 mb-8"
+            >
               <div className="px-4 sm:px-0">
                 <p className="text-3xl lg:text-5xl text-white font-ZenDots text-center mb-6">
                   {datamap.fields.companyOverviewTitle}
@@ -48,7 +52,7 @@ function SignatureEdition() {
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 sm:px-0">
                 {datamap.fields.imageProductSection1 && (
                   <ProductSection
-                  // @ts-ignore
+                    // @ts-ignore
                     image={datamap.fields.imageProductSection1.fields.file.url}
                     // @ts-ignore
                     title={datamap.fields.titleProductSection1}
@@ -58,7 +62,7 @@ function SignatureEdition() {
                 )}
                 {datamap.fields.imageProductSection2 && (
                   <ProductSection
-                  // @ts-ignore
+                    // @ts-ignore
                     image={datamap.fields.imageProductSection2.fields.file.url}
                     // @ts-ignore
                     title={datamap.fields.titleProductSection2}
@@ -68,7 +72,7 @@ function SignatureEdition() {
                 )}
                 {datamap.fields.imageProductSection3 && (
                   <ProductSection
-                  // @ts-ignore
+                    // @ts-ignore
                     image={datamap.fields.imageProductSection3.fields.file.url}
                     // @ts-ignore
                     title={datamap.fields.titleProductSection3}
@@ -100,7 +104,7 @@ const ProductSection = ({ image, title, content }: { image: string; title: strin
     </div>
     <p className="text-xl text-gray-200 font-ZenDots pt-4 text-center lg:pt-8 mb-4">{title}</p>
     <div className="rounded-lg text-justify px-4 sm:px-0 mb-4">
-        {/* @ts-ignore */}
+      {/* @ts-ignore */}
       <RichText document={content} />
     </div>
     <div className="pt-2 px-4 sm:px-0 text-center">
