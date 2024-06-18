@@ -44,6 +44,7 @@ function CompanyOverview() {
           crossOrigin="anonymous"
         />
       </Head>
+      {showContent && (
       <div className="max-w-full max-h-full mx-auto my-auto py-5 px-4 sm:px-6">
   {data?.map((datamap) => (
     // @ts-ignore
@@ -79,6 +80,7 @@ function CompanyOverview() {
     </div>
   ))}
 </div>
+      )}
     </div>
   );
 }
