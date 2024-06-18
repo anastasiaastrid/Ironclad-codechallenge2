@@ -50,7 +50,6 @@ function CompanyHistory() {
                   src={`https:${datamap.fields.companyHistoryImage.fields.file.url}`}
                   width={374}
                   height={441}
-                  sizes="100vw"
                 />
               </div>
               <div className="col-span-2 text-center md:text-left lg:ml-8 mt-5 lg:mt-0">

@@ -1,5 +1,5 @@
 "use client"
-import { Suspense, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import RichText from "@/views/richtext/richText";
