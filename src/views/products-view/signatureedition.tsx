@@ -1,4 +1,5 @@
 "use client";
+
 import { useState, useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";

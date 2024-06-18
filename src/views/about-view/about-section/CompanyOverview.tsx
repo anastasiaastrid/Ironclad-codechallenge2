@@ -53,7 +53,7 @@ function CompanyOverview() {
                 />
               </div>
               <div className="col-span-2 text-center md:text-left lg:ml-8 mt-5 lg:mt-0">
-                <p className="text-3xl lg:text-5xl text-black font-ZenDots">{datamap.fields.title}</p>
+                <p className="text-3xl lg:text-5xl text-black font-ZenDots">{datamap.fields.summary}</p>
                 <p className="text-xl lg:text-2xl pb-4 text-black font-BakbakOne tracking-widest">
                   {datamap.fields.companyOverviewTitle}
                 </p>
