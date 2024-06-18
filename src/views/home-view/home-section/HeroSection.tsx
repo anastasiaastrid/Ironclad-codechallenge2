@@ -1,9 +1,11 @@
 "use client";
+
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import RichText from "@/views/richtext/richText";
+import Link from "next/link";
 import { client } from "@/utils/contentful";
 import { TypeBlogFields } from "@/types/contentful";
-import Link from "next/link";
 import Head from "next/head";
 
 function HeroSection() {
@@ -16,7 +18,7 @@ function HeroSection() {
         // @ts-ignore
         setData(res?.items || []);
       } catch (err) {
-        console.error("Error fetching data:", err);
+        console.log(err);
       }
     }
     fetchData();
@@ -34,10 +36,10 @@ function HeroSection() {
           // @ts-ignore
           <div key={datamap.sys.id} className="relative">
             <Image
-              className="h-96 w-full object-cover lg:object-cover lg:h-full lg:w-full md:object-cover md:h-full md:w-full sm:object-cover sm:h-96 sm:w-full"
+              className="w-[602px] h-[867px] object-cover lg:object-cover lg:h-full lg:w-full md:object-cover md:h-full md:w-full sm:object-cover sm:h-full sm:w-full"
               alt="Image"
               // @ts-ignore
-              src={`https:${datamap.fields.articleImage.fields.file.url}?w=1920&q=75`}
+              src={`https:${datamap.fields.articleImage.fields.file.url}`}
               width={1920}
               height={1080}
               priority={true}
@@ -47,7 +49,6 @@ function HeroSection() {
               <p className="text-4xl lg:text-7xl font-ZenDots">{datamap.fields.title}</p>
               <p className="pt-4 lg:pt-6 text-lg lg:text-2xl tracking-wide font-BakbakOne">{datamap.fields.summary}</p>
               <div className="font-Anek_Devanagari pt-4 lg:pt-6 text-lg lg:text-lg">
-                {/* @ts-ignore */}
                 <RichText document={datamap.fields.details} />
               </div>
               <div className="pt-4 lg:pt-6">
