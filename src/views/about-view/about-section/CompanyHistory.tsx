@@ -49,7 +49,8 @@ function CompanyHistory() {
                   // @ts-ignore
                   src={`https:${datamap.fields.companyHistoryImage.fields.file.url}`}
                   width={374}
-                  height={441}
+                  height={441 px}
+                  
                 />
               </div>
               <div className="col-span-2 text-center md:text-left lg:ml-8 mt-5 lg:mt-0">
