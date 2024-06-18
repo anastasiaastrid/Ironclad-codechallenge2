@@ -61,9 +61,8 @@ function SignatureEdition() {
                 </p>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 sm:px-0">
-                {/** Grid Item 1 */}
-                <div className="text-gray-200 flex flex-col">
-                  <div className="relative h-80 sm:h-96 mb-4">
+                <div className="text-gray-200">
+                  <div className="relative h-80 sm:h-64 md:h-80 lg:h-96">
                     <Image
                       className="rounded-lg"
                       alt={`Product Image 1`}
@@ -74,25 +73,22 @@ function SignatureEdition() {
                       loading="lazy"
                     />
                   </div>
-                  <div className="px-4 sm:px-0">
-                    <p className="text-xl text-gray-200 font-ZenDots text-center lg:pt-8 mb-4">
-                      {/** @ts-ignore */}
-                      {datamap.fields.titleProductSection1}
-                    </p>
-                    <div className="rounded-lg text-justify mb-4">
-                      <RichText document={datamap.fields.productSection1 || ""} />
-                    </div>
-                    <div className="text-center">
-                      <Link href="/product/">
-                        <button className="px-4 py-2 font-bold text-black rounded-full bg-white">Shop Now</button>
-                      </Link>
-                    </div>
+                  <p className="text-xl text-gray-200 font-ZenDots pt-4 text-center lg:pt-8 mb-4">
+                    {/** @ts-ignore */}
+                    {datamap.fields.titleProductSection1}
+                  </p>
+                  <div className="rounded-lg text-justify px-4 sm:px-0 mb-4">
+                    <RichText document={datamap.fields.productSection1 || ""} />
+                  </div>
+                  <div className="pt-2 px-4 sm:px-0 text-center">
+                    <Link href="/product/">
+                      <button className="px-4 py-2 font-bold text-black rounded-full bg-white">Shop Now</button>
+                    </Link>
                   </div>
                 </div>
 
-                {/** Grid Item 2 */}
-                <div className="text-gray-200 flex flex-col">
-                  <div className="relative h-80 sm:h-96 mb-4">
+                <div className="text-gray-200">
+                  <div className="relative h-80 sm:h-64 md:h-80 lg:h-96">
                     <Image
                       className="rounded-lg"
                       alt={`Product Image 2`}
@@ -103,25 +99,22 @@ function SignatureEdition() {
                       loading="lazy"
                     />
                   </div>
-                  <div className="px-4 sm:px-0">
-                    <p className="text-xl text-gray-200 font-ZenDots text-center lg:pt-8 mb-4">
-                      {/** @ts-ignore */}
-                      {datamap.fields.titleProductSection2}
-                    </p>
-                    <div className="rounded-lg text-justify mb-4">
-                      <RichText document={datamap.fields.productSection2 || ""} />
-                    </div>
-                    <div className="text-center">
-                      <Link href="/product/">
-                        <button className="px-4 py-2 font-bold text-black rounded-full bg-white">Shop Now</button>
-                      </Link>
-                    </div>
+                  <p className="text-xl text-gray-200 font-ZenDots pt-4 text-center lg:pt-8 mb-4">
+                    {/** @ts-ignore */}
+                    {datamap.fields.titleProductSection2}
+                  </p>
+                  <div className="rounded-lg text-justify px-4 sm:px-0 mb-4">
+                    <RichText document={datamap.fields.productSection2 || ""} />
+                  </div>
+                  <div className="pt-2 px-4 sm:px-0 text-center">
+                    <Link href="/product/">
+                      <button className="px-4 py-2 font-bold text-black rounded-full bg-white">Shop Now</button>
+                    </Link>
                   </div>
                 </div>
 
-                {/** Grid Item 3 */}
-                <div className="text-gray-200 flex flex-col">
-                  <div className="relative h-80 sm:h-96 mb-4">
+                <div className="text-gray-200">
+                  <div className="relative h-80 sm:h-64 md:h-80 lg:h-96">
                     <Image
                       className="rounded-lg"
                       alt={`Product Image 3`}
@@ -132,19 +125,17 @@ function SignatureEdition() {
                       loading="lazy"
                     />
                   </div>
-                  <div className="px-4 sm:px-0">
-                    <p className="text-xl text-gray-200 font-ZenDots text-center lg:pt-8 mb-4">
-                      {/** @ts-ignore */}
-                      {datamap.fields.titleProductSection3}
-                    </p>
-                    <div className="rounded-lg text-justify mb-4">
-                      <RichText document={datamap.fields.productSection3 || ""} />
-                    </div>
-                    <div className="text-center">
-                      <Link href="/product/">
-                        <button className="px-4 py-2 font-bold text-black rounded-full bg-white">Shop Now</button>
-                      </Link>
-                    </div>
+                  <p className="text-xl text-gray-200 font-ZenDots pt-4 text-center lg:pt-8 mb-4">
+                    {/** @ts-ignore */}
+                    {datamap.fields.titleProductSection3}
+                  </p>
+                  <div className="rounded-lg text-justify px-4 sm:px-0 mb-4">
+                    <RichText document={datamap.fields.productSection3 || ""} />
+                  </div>
+                  <div className="pt-2 px-4 sm:px-0 text-center">
+                    <Link href="/product/">
+                      <button className="px-4 py-2 font-bold text-black rounded-full bg-white">Shop Now</button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -152,6 +143,7 @@ function SignatureEdition() {
           ))}
         </div>
       )}
+
     </div>
   );
 }
