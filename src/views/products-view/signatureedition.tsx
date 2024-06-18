@@ -1,5 +1,5 @@
-"use client";
-import { useState, useEffect } from "react";
+"use client"
+import { Suspense, useState, useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import RichText from "@/views/richtext/richText";
@@ -17,7 +17,7 @@ function SignatureEdition() {
         const response = await client.getEntries<TypeBlogFields>();
         // @ts-ignore
         setData(response?.items || []);
-        setShowContent(true);
+        setShowContent(true); // Show content after fetching data
       } catch (err) {
         console.log(err);
       }
@@ -29,8 +29,20 @@ function SignatureEdition() {
     <div className="bg-white min-h-full w-full">
       <Head>
         <title>Ironclad Watch Signature Edition Products</title>
-        <link rel="preload" href="/fonts/ZenDots-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
-        <link rel="preload" href="/fonts/BakbakOne-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
+        <link
+          rel="preload"
+          href="/fonts/ZenDots-Regular.ttf"
+          as="font"
+          type="font/ttf"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/BakbakOne-Regular.ttf"
+          as="font"
+          type="font/ttf"
+          crossOrigin="anonymous"
+        />
       </Head>
       {showContent && (
         <div className="max-w-full max-h-full my-auto mx-auto py-5 px-4 sm:px-6 ">
@@ -50,7 +62,7 @@ function SignatureEdition() {
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 sm:px-0">
                 <div className="text-gray-200">
-                  <div className="relative h-80 sm:h-64 md:h-80 lg:h-96 aspect-w-602 aspect-h-867">
+                  <div className="relative h-80 sm:h-64 md:h-80 lg:h-96">
                     <Image
                       className="rounded-lg"
                       alt={`Product Image 1`}
@@ -76,7 +88,7 @@ function SignatureEdition() {
                 </div>
 
                 <div className="text-gray-200">
-                  <div className="relative h-80 sm:h-64 md:h-80 lg:h-96 aspect-w-602 aspect-h-867">
+                  <div className="relative h-80 sm:h-64 md:h-80 lg:h-96">
                     <Image
                       className="rounded-lg"
                       alt={`Product Image 2`}
@@ -102,7 +114,7 @@ function SignatureEdition() {
                 </div>
 
                 <div className="text-gray-200">
-                  <div className="relative h-80 sm:h-64 md:h-80 lg:h-96 aspect-w-602 aspect-h-867">
+                  <div className="relative h-80 sm:h-64 md:h-80 lg:h-96">
                     <Image
                       className="rounded-lg"
                       alt={`Product Image 3`}
@@ -131,6 +143,7 @@ function SignatureEdition() {
           ))}
         </div>
       )}
+
     </div>
   );
 }
