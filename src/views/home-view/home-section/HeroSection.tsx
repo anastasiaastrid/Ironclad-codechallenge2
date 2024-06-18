@@ -27,7 +27,7 @@ function HeroSection() {
   return (
     <div className="grid grid-cols-1 pb-0 max-w-full max-h-full mx-auto my-auto">
       <Head>
-        <title>Ironclad Watch</title>
+        <title>Ironclad Watch Testimonials</title>
         <link rel="preload" href="/fonts/ZenDots-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
         <link rel="preload" href="/fonts/BakbakOne-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
       </Head>
@@ -36,7 +36,7 @@ function HeroSection() {
           // @ts-ignore
           <div key={datamap.sys.id} className="relative">
             <Image
-              className="w-[554px] h-[600px] object-cover lg:object-cover lg:h-full lg:w-full md:object-cover md:h-full md:w-full sm:object-cover sm:h-full sm:w-full"
+              className="w-[499px] h-[540px] object-cover lg:object-cover lg:h-full lg:w-full md:object-cover md:h-full md:w-full sm:object-cover sm:h-full sm:w-full"
               alt="Image"
               // @ts-ignore
               src={`https:${datamap.fields.articleImage.fields.file.url}`}
