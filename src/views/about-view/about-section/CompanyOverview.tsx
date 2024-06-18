@@ -1,3 +1,5 @@
+
+
 "use client";
 import { useState, useEffect } from "react";
 import Head from "next/head";
@@ -70,3 +72,4 @@ function CompanyOverview() {
 }
 
 export default CompanyOverview;
+
