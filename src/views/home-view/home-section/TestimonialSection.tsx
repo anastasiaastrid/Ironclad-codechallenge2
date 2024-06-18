@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useEffect, useState } from "react";
 import Head from "next/head";
 import { Testimonial } from "@/type/testimonial";
@@ -56,11 +56,11 @@ const TestimonialsPage: React.FC = () => {
           <h1 className="text-3xl font-bold text-center mb-8 text-black">Ironclad Wearers</h1>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {isLoadingTestimonials ? (
-              Array(3).fill(0).map((_, index) => (
+              Array.from({ length: 3 }).map((_, index) => (
                 <div key={index} className="border rounded-lg p-4 flex flex-col items-center">
-                  <div className="rounded-full w-24 h-24 mb-4 bg-gray-200 animate-pulse"></div>
-                  <div className="w-full h-6 bg-gray-200 animate-pulse mb-2"></div>
-                  <div className="w-1/2 h-6 bg-gray-200 animate-pulse"></div>
+                  <div className="rounded-full w-24 h-24 mb-4 bg-gray-200"></div>
+                  <div className="w-full h-6 bg-gray-200 mb-2"></div>
+                  <div className="w-1/2 h-6 bg-gray-200"></div>
                 </div>
               ))
             ) : (
