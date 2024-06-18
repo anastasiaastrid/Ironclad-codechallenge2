@@ -50,8 +50,8 @@ function CompanyOverview() {
                   alt="Company History Image"
                   // @ts-ignore
                   src={`https:${datamap.fields.companyOverviewImage.fields.file.url}`}
-                  width={646}
-                  height={762}
+                  width={374}
+                  height={441}
                   sizes="100vw"
                 />
               </div>
