@@ -30,29 +30,23 @@ function CompanyHistory() {
         <title>Ironclad Watch Company History</title>
       </Head>
       {showContent && (
-        <div className="max-w-full max-h-full mx-auto my-auto py-5 px-4 sm:px-6">
+        <div className="max-w-full mx-auto my-auto py-5 px-4 sm:px-6 lg:px-8">
           {data?.map((datamap) => (
             // @ts-ignore
-            <div
-              // @ts-ignore
-              key={datamap.sys.id}
-              className="
-        grid grid-cols-1 gap-4 py-5 px-7 items-center
-        md:grid-cols-1 
-        lg:grid-cols-3
-      "
-            >
-              <div className="flex justify-center col-span-1">
-                <Image
-                  className="rounded-md"
-                  alt="Company History Image"
-                  // @ts-ignore
-                  src={`https:${datamap.fields.companyHistoryImage.fields.file.url}`}
-                  width={374}
-                  height={441}
-                />
+            <div key={datamap.sys.id} className="grid grid-cols-1 md:grid-cols-3 gap-8 py-5 px-4 sm:px-0">
+              <div className="col-span-1 flex justify-center">
+                <div className="relative w-full h-96 md:h-auto">
+                  <Image
+                    className="rounded-md"
+                    // @ts-ignore
+                    src={`https:${datamap.fields.companyHistoryImage.fields.file.url}`}
+                    alt="Company History Image"
+                    layout="fill"
+                    objectFit="cover"
+                  />
+                </div>
               </div>
-              <div className="col-span-2 text-center md:text-left lg:ml-8 mt-5 lg:mt-0">
+              <div className="col-span-2 text-center md:text-left">
                 <p className="text-3xl lg:text-5xl text-black font-ZenDots">{datamap.fields.title}</p>
                 <p className="text-xl lg:text-2xl pb-4 text-black font-BakbakOne tracking-widest">
                   {datamap.fields.companyHistoryTitle}
