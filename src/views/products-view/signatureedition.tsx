@@ -62,7 +62,7 @@ function SignatureEdition() {
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 sm:px-0">
                 <div className="text-gray-200">
-                  <div className="relative h-80 sm:h-64 md:h-80 lg:h-96">
+                <div className="relative sm:h-64 md:h-80 lg:h-96 h-[100px] w-[100px]">
                     <Image
                       className="rounded-lg"
                       alt={`Product Image 1`}
@@ -88,7 +88,7 @@ function SignatureEdition() {
                 </div>
 
                 <div className="text-gray-200">
-                  <div className="relative h-80 sm:h-64 md:h-80 lg:h-96">
+                <div className="relative sm:h-64 md:h-80 lg:h-96 h-[100px] w-[100px]">
                     <Image
                       className="rounded-lg"
                       alt={`Product Image 2`}
@@ -114,7 +114,7 @@ function SignatureEdition() {
                 </div>
 
                 <div className="text-gray-200">
-                  <div className="relative h-80 sm:h-64 md:h-80 lg:h-96">
+                  <div className="relative sm:h-64 md:h-80 lg:h-96 h-[100px] w-[100px]">
                     <Image
                       className="rounded-lg"
                       alt={`Product Image 3`}
