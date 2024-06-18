@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState, useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
@@ -17,7 +17,7 @@ function SignatureEdition() {
         const response = await client.getEntries<TypeBlogFields>();
         // @ts-ignore
         setData(response?.items || []);
-        setShowContent(true); 
+        setShowContent(true);
       } catch (err) {
         console.log(err);
       }
@@ -29,20 +29,8 @@ function SignatureEdition() {
     <div className="bg-white min-h-full w-full">
       <Head>
         <title>Ironclad Watch Signature Edition Products</title>
-        <link
-          rel="preload"
-          href="/fonts/ZenDots-Regular.ttf"
-          as="font"
-          type="font/ttf"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preload"
-          href="/fonts/BakbakOne-Regular.ttf"
-          as="font"
-          type="font/ttf"
-          crossOrigin="anonymous"
-        />
+        <link rel="preload" href="/fonts/ZenDots-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
+        <link rel="preload" href="/fonts/BakbakOne-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
       </Head>
       {showContent && (
         <div className="max-w-full max-h-full my-auto mx-auto py-5 px-4 sm:px-6 ">
@@ -62,14 +50,13 @@ function SignatureEdition() {
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 sm:px-0">
                 <div className="text-gray-200">
-                  <div className="relative h-80 sm:h-64 md:h-80 lg:h-96">
+                  <div className="relative h-80 sm:h-64 md:h-80 lg:h-96 aspect-w-602 aspect-h-867">
                     <Image
                       className="rounded-lg"
                       alt={`Product Image 1`}
                       // @ts-ignore
                       src={`https:${datamap.fields.imageProductSection1?.fields.file.url}`}
-                      width={602}
-                      height={867}
+                      layout="fill"
                       objectFit="cover"
                       loading="lazy"
                     />
@@ -89,14 +76,13 @@ function SignatureEdition() {
                 </div>
 
                 <div className="text-gray-200">
-                  <div className="relative h-80 sm:h-64 md:h-80 lg:h-96">
+                  <div className="relative h-80 sm:h-64 md:h-80 lg:h-96 aspect-w-602 aspect-h-867">
                     <Image
                       className="rounded-lg"
                       alt={`Product Image 2`}
                       // @ts-ignore
                       src={`https:${datamap.fields.imageProductSection2?.fields.file.url}`}
-                      width={602}
-                      height={867}
+                      layout="fill"
                       objectFit="cover"
                       loading="lazy"
                     />
@@ -116,14 +102,13 @@ function SignatureEdition() {
                 </div>
 
                 <div className="text-gray-200">
-                  <div className="relative h-80 sm:h-64 md:h-80 lg:h-96">
+                  <div className="relative h-80 sm:h-64 md:h-80 lg:h-96 aspect-w-602 aspect-h-867">
                     <Image
                       className="rounded-lg"
                       alt={`Product Image 3`}
                       // @ts-ignore
                       src={`https:${datamap.fields.imageProductSection3?.fields.file.url}`}
-                      width={602}
-                      height={867}
+                      layout="fill"
                       objectFit="cover"
                       loading="lazy"
                     />
@@ -146,7 +131,6 @@ function SignatureEdition() {
           ))}
         </div>
       )}
-
     </div>
   );
 }
