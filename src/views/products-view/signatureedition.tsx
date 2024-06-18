@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState, useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
@@ -17,7 +17,7 @@ function SignatureEdition() {
         const response = await client.getEntries<TypeBlogFields>();
         // @ts-ignore
         setData(response?.items || []);
-        setShowContent(true); // Show content after fetching data
+        setShowContent(true);
       } catch (err) {
         console.log(err);
       }
@@ -29,20 +29,8 @@ function SignatureEdition() {
     <div className="bg-white min-h-full w-full">
       <Head>
         <title>Ironclad Watch Signature Edition Products</title>
-        <link
-          rel="preload"
-          href="/fonts/ZenDots-Regular.ttf"
-          as="font"
-          type="font/ttf"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preload"
-          href="/fonts/BakbakOne-Regular.ttf"
-          as="font"
-          type="font/ttf"
-          crossOrigin="anonymous"
-        />
+        <link rel="preload" href="/fonts/ZenDots-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
+        <link rel="preload" href="/fonts/BakbakOne-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
       </Head>
       {showContent && (
         <div className="max-w-full max-h-full my-auto mx-auto py-5 px-4 sm:px-6 ">
@@ -143,7 +131,6 @@ function SignatureEdition() {
           ))}
         </div>
       )}
-
     </div>
   );
 }
