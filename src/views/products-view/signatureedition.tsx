@@ -68,7 +68,8 @@ function SignatureEdition() {
                       alt={`Product Image 1`}
                       // @ts-ignore
                       src={`https:${datamap.fields.imageProductSection1?.fields.file.url}`}
-                      layout="fill"
+                      width={602}
+                      height={867}
                       objectFit="cover"
                       loading="lazy"
                     />
@@ -94,7 +95,8 @@ function SignatureEdition() {
                       alt={`Product Image 2`}
                       // @ts-ignore
                       src={`https:${datamap.fields.imageProductSection2?.fields.file.url}`}
-                      layout="fill"
+                      width={602}
+                      height={867}
                       objectFit="cover"
                       loading="lazy"
                     />
@@ -120,7 +122,8 @@ function SignatureEdition() {
                       alt={`Product Image 3`}
                       // @ts-ignore
                       src={`https:${datamap.fields.imageProductSection3?.fields.file.url}`}
-                      layout="fill"
+                      width={602}
+                      height={867}
                       objectFit="cover"
                       loading="lazy"
                     />

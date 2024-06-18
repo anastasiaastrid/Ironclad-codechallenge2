@@ -6,6 +6,7 @@ import RichText from "@/views/richtext/richText";
 import Link from "next/link";
 import { client } from "@/utils/contentful";
 import { TypeBlogFields } from "@/types/contentful";
+import Head from "next/head";
 
 function HeroSection() {
   const [data, setData] = useState<TypeBlogFields[]>([]);
@@ -25,6 +26,10 @@ function HeroSection() {
 
   return (
     <div className="grid grid-cols-1 pb-0 max-w-full max-h-full mx-auto my-auto">
+      <Head>
+        <link rel="preload" href="/fonts/ZenDots-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
+        <link rel="preload" href="/fonts/BakbakOne-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
+      </Head>
       {data.length > 0 &&
         data.map((datamap) => (
           // @ts-ignore

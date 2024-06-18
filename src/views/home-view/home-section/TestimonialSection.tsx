@@ -25,7 +25,6 @@ const TestimonialsPage: React.FC = () => {
         setTestimonials(fetchedTestimonials);
       } catch (error) {
         console.error("Error fetching testimonials:", error);
-        // Handle error state or retry logic if needed
       } finally {
         setIsLoadingTestimonials(false); // Set isLoadingTestimonials to false when done fetching
         setShowTestimonials(true); // Show testimonials after loading
@@ -49,7 +48,6 @@ const TestimonialsPage: React.FC = () => {
     <div className="max-w-full max-h-full mx-auto my-auto py-5 px-4 sm:px-6">
       <Head>
         <title>Ironclad Watch Testimonials</title>
-        {/* Preload fonts if necessary */}
         <link rel="preload" href="/fonts/ZenDots-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
         <link rel="preload" href="/fonts/BakbakOne-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
       </Head>
