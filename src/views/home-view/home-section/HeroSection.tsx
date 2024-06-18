@@ -42,7 +42,6 @@ function HeroSection() {
               width={1920}
               height={850}
               priority={true}
-               loading="lazy"
             />
 
             <div className="absolute inset-0 flex flex-col justify-center px-10 py-10 lg:pl-28 lg:pr-155px bg-black bg-opacity-50 text-white">
