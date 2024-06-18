@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useEffect, useState } from "react";
 import Head from "next/head";
@@ -25,10 +25,16 @@ function HeroSection() {
   }, []);
 
   return (
-    <div className="grid grid-cols-1 pb-0">
+    <div className="grid grid-cols-1 pb-0 max-w-full max-h-full mx-auto my-auto">
       <Head>
         {/* Preload fonts */}
-        <link rel="preload" href="/fonts/Anek-Devanagari-Regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <link
+          rel="preload"
+          href="/fonts/Anek-Devanagari-Regular.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
         <link rel="preload" href="/fonts/BakbakOne-Regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <link rel="preload" href="/fonts/ZenDots-Regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
       </Head>

@@ -36,7 +36,7 @@ const Team: React.FC = () => {
   }, []);
 
   return (
-    <div className="container mx-auto px-8 pt-5 pb-14">
+    <div className="max-w-full max-h-full mx-auto my-auto py-5 px-4 sm:px-6">
       <h1 className="text-3xl font-bold text-center mb-8 text-black font-BakbakOne">Ironclad Wearers</h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {testimonials.map((testimonial, index) => (

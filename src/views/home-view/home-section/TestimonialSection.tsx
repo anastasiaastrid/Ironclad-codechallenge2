@@ -37,7 +37,7 @@ const TestimonialsPage: React.FC = () => {
   }, []);
 
   return (
-    <div className="container w-full h-full mx-auto px-8 pt-5 pb-14">
+    <div className="max-w-full max-h-full mx-auto my-auto py-5 px-4 sm:px-6">
       <Head>
         <title>Ironclad Watch Testimonials</title>
       </Head>

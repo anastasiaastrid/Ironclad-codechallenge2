@@ -3,7 +3,8 @@ import Image from "next/image";
 
 function Footer() {
   return (
-    <footer className="bg-neutral-950 text-white py-4 px-6 md:px-10 h-full w-full">
+    <footer className="bg-neutral-950 text-white  max-w-full max-h-full mx-auto my-auto py-5 px-4 sm:px-6">
+
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
         <Link href="/">
           <div className="flex items-center space-x-2 cursor-pointer">

@@ -13,7 +13,7 @@ function Header() {
   };
 
   return (
-    <header className="sticky top-0 z-50 flex items-center justify-between p-7 lg:py-5 lg:px-20 bg-black text-white">
+    <header className="sticky top-0 z-50 flex items-center justify-between max-w-full max-h-full mx-auto my-auto py-5 px-4 sm:px-6 bg-black text-white">
       <Head>
         <link rel="preload" href="/static/logo/ironcladwatcheslogo-01-white-01-01.png" as="image" />
         {/* Add preload for fonts */}

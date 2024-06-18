@@ -32,7 +32,7 @@ function SignatureEdition() {
           rel="stylesheet"
         />
       </Head>
-      <div className="max-w-full max-h-full my-auto mx-auto py-5 px-4 sm:px-6 lg:px-20">
+      <div className="max-w-full max-h-full my-auto mx-auto py-5 px-4 sm:px-6 ">
         {data?.map((datamap) => (
           <div
             // @ts-ignore
