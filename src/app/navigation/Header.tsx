@@ -15,7 +15,7 @@ function Header() {
   return (
     <header className="sticky top-0 z-50 flex items-center justify-between max-w-full max-h-full mx-auto my-auto py-5 px-4 sm:px-6 bg-black text-white">
       <Head>
-        <title>Ironclad Watch Testimonials</title>
+        <title>Ironclad Watch</title>
         <link rel="preload" href="/fonts/ZenDots-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
         <link rel="preload" href="/fonts/BakbakOne-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
       </Head>
