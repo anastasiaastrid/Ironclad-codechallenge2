@@ -45,12 +45,12 @@ function HeroSection() {
               priority={true}
             />
 
-            <div className="absolute inset-0 flex flex-col justify-center px-10 py-10  lg:p-28 sm:p-full sm:w-full bg-black bg-opacity-50 text-white">
+            <div className=" absolute inset-0 flex flex-col justify-center px-10 py-10  lg:p-28 sm:p-full sm:w-full bg-black bg-opacity-50 text-white">
               <p className="w-1/2 text-4xl lg:text-7xl font-ZenDots sm:p-full sm:w-full">{datamap.fields.title}</p>
               <p className="w-1/2 pt-4 lg:pt-6 text-lg lg:text-2xl sm:p-full sm:w-full tracking-wide font-BakbakOne">
                 {datamap.fields.summary}
               </p>
-              <div className="font-Anek_Devanagari pt-4 lg:pt-6 text-lg lg:text-lg sm:p-full sm:w-full">
+              <div className="font-Anek_Devanagari text-sm text-justify pt-4 lg:pt-6 lg:text-lg sm:p-full sm:w-full">
                 <RichText document={datamap.fields.details} />
               </div>
               <div className="w-1/2 pt-4 lg:pt-6">
