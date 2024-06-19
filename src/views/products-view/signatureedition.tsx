@@ -39,7 +39,7 @@ function SignatureEdition() {
             <div
               // @ts-ignore
               key={datamap.sys.id}
-              className="bg-zinc-900 text-white font-Anek_Devanagari pt-12 pb-8 px-4 sm:px-6 lg:px-8 mb-8"
+              className="bg-zinc-900 text-white font-Anek_Devanagari pt-12 pb-8 px-4 sm:px-6 lg:px-8 mb-8 max-w-full max-h-full"
             >
               <div className="px-4 sm:px-0">
                 <p className="text-xl lg:text-5xl text-white font-ZenDots text-center">
