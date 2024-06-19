@@ -42,10 +42,10 @@ function SignatureEdition() {
               className="bg-zinc-900 text-white font-Anek_Devanagari pt-12 pb-8 px-4 sm:px-6 lg:px-8 mb-8"
             >
               <div className="px-4 sm:px-0">
-                <p className="text-3xl lg:text-5xl text-white font-ZenDots text-center mb-6">
+                <p className="text-3xl lg:text-5xl text-white font-ZenDots text-center">
                   {datamap.fields.companyOverviewTitle}
                 </p>
-                <p className="text-white font-BakbakOne tracking-widest pb-4 text-center mb-8">
+                <p className="text-white font-BakbakOne tracking-widest pb-4 text-center mb-3">
                   {datamap.fields.productTitle}
                 </p>
               </div>
@@ -68,7 +68,7 @@ function SignatureEdition() {
                       {/* @ts-ignore */}
                       {datamap.fields.titleProductSection1}
                     </p>
-                    <div className="rounded-lg text-justify px-4 sm:px-0 mb-4">
+                    <div className="leading-relaxed text-sm lg:text-base rounded-lg text-justify px-4 sm:px-0 mb-4">
                       <RichText document={datamap.fields.productSection1 || ""} />
                     </div>
                     <div className="pt-2 px-4 sm:px-0 text-center">
@@ -96,7 +96,7 @@ function SignatureEdition() {
                       {/* @ts-ignore */}
                       {datamap.fields.titleProductSection2}
                     </p>
-                    <div className="rounded-lg text-justify px-4 sm:px-0 mb-4">
+                    <div className="leading-relaxed text-sm lg:text-base rounded-lg text-justify px-4 sm:px-0 mb-4">
                       <RichText document={datamap.fields.productSection2 || ""} />
                     </div>
                     <div className="pt-2 px-4 sm:px-0 text-center">
@@ -124,7 +124,7 @@ function SignatureEdition() {
                       {/* @ts-ignore */}
                       {datamap.fields.titleProductSection3}
                     </p>
-                    <div className="rounded-lg text-justify px-4 sm:px-0 mb-4">
+                    <div className="leading-relaxed text-sm lg:text-base rounded-lg text-justify px-4 sm:px-0 mb-4">
                       <RichText document={datamap.fields.productSection3 || ""} />
                     </div>
                     <div className="pt-2 px-4 sm:px-0 text-center">

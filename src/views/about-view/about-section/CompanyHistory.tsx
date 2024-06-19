@@ -37,10 +37,10 @@ function CompanyHistory() {
               // @ts-ignore
               key={datamap.sys.id}
               className="
-        grid grid-cols-1 gap-4 py-5 px-7 items-center
-        md:grid-cols-1 
-        lg:grid-cols-3
-      "
+              grid grid-cols-1 gap-4 py-5 px-7 items-center
+              md:grid-cols-1 
+              lg:grid-cols-3
+              "
             >
               <div className="flex justify-center col-span-1">
                 <Image
@@ -54,10 +54,10 @@ function CompanyHistory() {
               </div>
               <div className="col-span-2 text-center md:text-left lg:ml-8 mt-5 lg:mt-0">
                 <p className="text-3xl lg:text-5xl text-black font-ZenDots">{datamap.fields.title}</p>
-                <p className="text-xl lg:text-2xl pb-4 text-black font-BakbakOne tracking-widest">
+                <p className="text-base lg:text-2xl pb-4 text-black font-BakbakOne tracking-widest">
                   {datamap.fields.companyHistoryTitle}
                 </p>
-                <div className="text-base lg:text-base text-gray-900 leading-7 text-justify">
+                <div className="text-sm lg:text-base text-gray-900 leading-7 text-justify">
                   <RichText document={datamap.fields.companyHistoryText} />
                 </div>
               </div>
