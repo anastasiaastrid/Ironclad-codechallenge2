@@ -64,7 +64,7 @@ function SignatureEdition() {
                         loading="lazy"
                       />
                     </div>
-                    <p className="text-xl text-gray-200 font-ZenDots pt-4 text-center lg:pt-8 mb-4">
+                    <p className="text-base lg:text-xl text-gray-200 font-ZenDots pt-4 text-center lg:pt-8 mb-4">
                       {/* @ts-ignore */}
                       {datamap.fields.titleProductSection1}
                     </p>
@@ -92,7 +92,7 @@ function SignatureEdition() {
                         loading="lazy"
                       />
                     </div>
-                    <p className="text-xl text-gray-200 font-ZenDots pt-4 text-center lg:pt-8 mb-4">
+                    <p className="text-base lg:text-xl text-gray-200 font-ZenDots pt-4 text-center lg:pt-8 mb-4">
                       {/* @ts-ignore */}
                       {datamap.fields.titleProductSection2}
                     </p>
@@ -120,7 +120,7 @@ function SignatureEdition() {
                         loading="lazy"
                       />
                     </div>
-                    <p className="text-xl text-gray-200 font-ZenDots pt-4 text-center lg:pt-8 mb-4">
+                    <p className="text-base lg:text-xl text-gray-200 font-ZenDots pt-4 text-center lg:pt-8 mb-4">
                       {/* @ts-ignore */}
                       {datamap.fields.titleProductSection3}
                     </p>
