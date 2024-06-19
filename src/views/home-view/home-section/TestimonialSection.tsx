@@ -45,14 +45,14 @@ const TestimonialsPage: React.FC = () => {
   }, []);
 
   return (
-    <div className="max-w-full mx-auto my-auto py-5 px-4 sm:px-6">
+    <div className="bg-white min-h-full w-full">
       <Head>
         <title>Ironclad Watch Testimonials</title>
         <link rel="preload" href="/fonts/ZenDots-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
         <link rel="preload" href="/fonts/BakbakOne-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
       </Head>
       {showTestimonials && (
-        <>
+        <div className="max-w-4xl mx-auto py-5 px-4 sm:px-6">
           <h1 className="text-3xl font-bold text-center mb-8 text-black">Ironclad Wearers</h1>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {isLoadingTestimonials ? (
@@ -78,7 +78,7 @@ const TestimonialsPage: React.FC = () => {
               ))
             )}
           </div>
-        </>
+        </div>
       )}
     </div>
   );

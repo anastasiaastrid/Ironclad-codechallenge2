@@ -15,6 +15,7 @@ function SignatureEdition() {
     async function fetchData() {
       try {
         const response = await client.getEntries<TypeBlogFields>();
+
         // @ts-ignore
         setData(response?.items || []);
         setShowContent(true);
@@ -33,10 +34,10 @@ function SignatureEdition() {
         <link rel="preload" href="/fonts/BakbakOne-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
       </Head>
       {showContent && (
-        <div className="max-w-full my-auto mx-auto py-5 px-4 sm:px-6">
+        <div className="max-w-screen-lg my-auto mx-auto py-5 px-4 sm:px-6">
           {data.map((datamap) => (
             <div
-            // @ts-ignore
+              // @ts-ignore
               key={datamap.sys.id}
               className="bg-zinc-900 text-white font-Anek_Devanagari pt-12 pb-8 px-4 sm:px-6 lg:px-8 mb-8"
             >
@@ -52,14 +53,13 @@ function SignatureEdition() {
                 {/* Product Section 1 */}
                 {datamap.fields.imageProductSection1 && (
                   <div key={datamap.fields.imageProductSection1.sys.id} className="text-gray-200">
-                    <div className="relative w-40 h-40 sm:w-64 sm:h-64 lg:w-80 lg:h-80 mx-auto">
+                    <div className="relative mx-auto w-40 h-40 sm:w-64 sm:h-64 lg:h-80">
                       <Image
-                        className="rounded-lg"
+                        className="rounded-lg object-cover"
                         alt={`Product Image 1`}
                         // @ts-ignore
                         src={`https:${datamap.fields.imageProductSection1.fields.file.url}`}
                         layout="fill"
-                        objectFit="cover"
                         loading="lazy"
                       />
                     </div>
@@ -80,14 +80,13 @@ function SignatureEdition() {
                 {/* Product Section 2 */}
                 {datamap.fields.imageProductSection2 && (
                   <div key={datamap.fields.imageProductSection2.sys.id} className="text-gray-200">
-                    <div className="relative w-40 h-40 sm:w-64 sm:h-64 lg:w-80 lg:h-80 mx-auto">
+                    <div className="relative mx-auto w-40 h-40 sm:w-64 sm:h-64 lg:h-80">
                       <Image
-                        className="rounded-lg"
+                        className="rounded-lg object-cover"
                         alt={`Product Image 2`}
                         // @ts-ignore
                         src={`https:${datamap.fields.imageProductSection2.fields.file.url}`}
                         layout="fill"
-                        objectFit="cover"
                         loading="lazy"
                       />
                     </div>
@@ -108,14 +107,13 @@ function SignatureEdition() {
                 {/* Product Section 3 */}
                 {datamap.fields.imageProductSection3 && (
                   <div key={datamap.fields.imageProductSection3.sys.id} className="text-gray-200">
-                    <div className="relative w-40 h-40 sm:w-64 sm:h-64 lg:w-80 lg:h-80 mx-auto">
+                    <div className="relative mx-auto w-40 h-40 sm:w-64 sm:h-64 lg:h-80">
                       <Image
-                        className="rounded-lg"
+                        className="rounded-lg object-cover"
                         alt={`Product Image 3`}
                         // @ts-ignore
                         src={`https:${datamap.fields.imageProductSection3.fields.file.url}`}
                         layout="fill"
-                        objectFit="cover"
                         loading="lazy"
                       />
                     </div>
