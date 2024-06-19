@@ -42,9 +42,9 @@ function CompanyHistory() {
               lg:grid-cols-3
               "
             >
-              <div className="flex justify-center col-span-1">
+              <div className="flex justify-center col-span-1 mx-auto">
                 <Image
-                  className="rounded-md h-2/4 w-2/4 lg:h-3/5 lg:w-3/5"
+                  className="rounded-md h-2/4 w-2/4 lg:h-3/5 lg:w-3/5 mx-auto"
                   alt="Company History Image"
                   // @ts-ignore
                   src={`https:${datamap.fields.companyHistoryImage.fields.file.url}`}
