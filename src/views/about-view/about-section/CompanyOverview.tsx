@@ -25,24 +25,24 @@ function CompanyOverview() {
   }, []);
 
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-white h-1/8 w-1/8">
       <Head>
         <title>Ironclad Watch Company Overview</title>
         <link rel="preload" href="/fonts/ZenDots-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
         <link rel="preload" href="/fonts/BakbakOne-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
       </Head>
       {showContent && (
-        <div className="max-w-screen-lg mx-auto my-auto py-5 px-4 sm:px-6">
+        <div className="max-w-full max-h-full mx-auto my-auto py-5 px-4 sm:px-6">
           {data?.map((datamap) => (
             // @ts-ignore
             <div
               // @ts-ignore
               key={datamap.sys.id}
               className="
-                grid grid-cols-1 gap-4 py-5 px-7 items-center
-                md:grid-cols-1 
-                lg:grid-cols-3
-              "
+        grid grid-cols-1 gap-4 py-5 px-7 items-center
+        md:grid-cols-1 
+        lg:grid-cols-3
+      "
             >
               <div className="flex justify-center col-span-1">
                 <Image

@@ -45,40 +45,38 @@ const TestimonialsPage: React.FC = () => {
   }, []);
 
   return (
-    <div className="bg-white min-h-full w-full">
+    <div className="max-w-full mx-auto my-auto py-5 px-4 sm:px-6">
       <Head>
         <title>Ironclad Watch Testimonials</title>
         <link rel="preload" href="/fonts/ZenDots-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
         <link rel="preload" href="/fonts/BakbakOne-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
       </Head>
       {showTestimonials && (
-        <div className="max-w-4xl mx-auto py-5 px-4 sm:px-6">
+        <>
           <h1 className="text-3xl font-bold text-center mb-8 text-black">Ironclad Wearers</h1>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {isLoadingTestimonials ? (
-              Array.from({ length: 3 }).map((_, index) => (
-                <div key={index} className="border rounded-lg p-4 flex flex-col items-center">
-                  <div className="rounded-full w-24 h-24 mb-4 bg-gray-200"></div>
-                  <div className="w-full h-6 bg-gray-200 mb-2"></div>
-                  <div className="w-1/2 h-6 bg-gray-200"></div>
-                </div>
-              ))
-            ) : (
-              testimonials.map((testimonial, index) => (
-                <div key={index} className="border rounded-lg p-4 flex flex-col items-center">
-                  <img
-                    src={testimonial.picture}
-                    alt={testimonial.name}
-                    className="rounded-full w-24 h-24 mb-4 object-cover"
-                    loading="lazy"
-                  />
-                  <p className="text-sm text-gray-900 leading-6 text-center mb-2">{testimonial.testimonial}</p>
-                  <p className="text-sm text-gray-700 font-semibold">{testimonial.name}</p>
-                </div>
-              ))
-            )}
+            {isLoadingTestimonials
+              ? Array.from({ length: 3 }).map((_, index) => (
+                  <div key={index} className="border rounded-lg p-4 flex flex-col items-center">
+                    <div className="rounded-full w-24 h-24 mb-4 bg-gray-200"></div>
+                    <div className="w-full h-6 bg-gray-200 mb-2"></div>
+                    <div className="w-1/2 h-6 bg-gray-200"></div>
+                  </div>
+                ))
+              : testimonials.map((testimonial, index) => (
+                  <div key={index} className="border rounded-lg p-4 flex flex-col items-center">
+                    <img
+                      src={testimonial.picture}
+                      alt={testimonial.name}
+                      className="rounded-full w-24 h-24 mb-4 object-cover"
+                      loading="lazy"
+                    />
+                    <p className="text-sm text-gray-900 leading-6 text-center mb-2">{testimonial.testimonial}</p>
+                    <p className="text-sm text-gray-700 font-semibold">{testimonial.name}</p>
+                  </div>
+                ))}
           </div>
-        </div>
+        </>
       )}
     </div>
   );
