@@ -19,7 +19,7 @@ function Header() {
         <link rel="preload" href="/fonts/ZenDots-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
         <link rel="preload" href="/fonts/BakbakOne-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
       </Head>
-      
+
       <Link href="/" onClick={toggleMenu}>
         <div className="flex items-center space-x-2 cursor-pointer">
           <Image src="/static/logo/ironcladwatcheslogo-01-white-01-01.png" alt="Logo" width={50} height={50} />
