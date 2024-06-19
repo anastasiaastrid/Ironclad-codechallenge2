@@ -27,14 +27,14 @@ function HeroSection() {
   return (
     <div className="grid grid-cols-1 pb-0 max-w-full max-h-full mx-auto my-auto">
       <Head>
-        <title>Ironclad Watch Testimonials</title>
+        <title>Ironclad Watch</title>
         <link rel="preload" href="/fonts/ZenDots-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
         <link rel="preload" href="/fonts/BakbakOne-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
       </Head>
       {data.length > 0 &&
         data.map((datamap) => (
           // @ts-ignore
-          <div key={datamap.sys.id} className="relative pt-0">
+          <div key={datamap.sys.id} className="bg-black relative">
             <Image
               className="h-[540px] w-fit object-cover lg:object-cover lg:h-full lg:w-full md:object-cover md:h-full md:w-full sm:object-cover sm:h-full sm:w-full"
               alt="Image"
