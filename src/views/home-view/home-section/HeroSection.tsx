@@ -34,7 +34,7 @@ function HeroSection() {
       {data.length > 0 &&
         data.map((datamap) => (
           // @ts-ignore
-          <div key={datamap.sys.id} className="relative">
+          <div key={datamap.sys.id} className="relative pt-0">
             <Image
               className="h-[540px] w-fit object-cover lg:object-cover lg:h-full lg:w-full md:object-cover md:h-full md:w-full sm:object-cover sm:h-full sm:w-full"
               alt="Image"
