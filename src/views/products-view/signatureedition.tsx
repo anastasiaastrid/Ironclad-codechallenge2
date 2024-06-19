@@ -68,7 +68,7 @@ function SignatureEdition() {
                       {/* @ts-ignore */}
                       {datamap.fields.titleProductSection1}
                     </p>
-                    <div className="leading-relaxed text-sm lg:text-base rounded-lg text-justify px-4 sm:px-0 mb-4">
+                    <div className="lg:leading-relaxed text-sm lg:text-base rounded-lg text-justify px-4 sm:px-0 mb-4">
                       <RichText document={datamap.fields.productSection1 || ""} />
                     </div>
                     <div className="pt-2 px-4 sm:px-0 text-center">
@@ -96,7 +96,7 @@ function SignatureEdition() {
                       {/* @ts-ignore */}
                       {datamap.fields.titleProductSection2}
                     </p>
-                    <div className="leading-relaxed text-sm lg:text-base rounded-lg text-justify px-4 sm:px-0 mb-4">
+                    <div className="lg:leading-relaxed text-sm lg:text-base rounded-lg text-justify px-4 sm:px-0 mb-4">
                       <RichText document={datamap.fields.productSection2 || ""} />
                     </div>
                     <div className="pt-2 px-4 sm:px-0 text-center">
@@ -124,7 +124,7 @@ function SignatureEdition() {
                       {/* @ts-ignore */}
                       {datamap.fields.titleProductSection3}
                     </p>
-                    <div className="leading-relaxed text-sm lg:text-base rounded-lg text-justify px-4 sm:px-0 mb-4">
+                    <div className="lg:leading-relaxed text-sm lg:text-base rounded-lg text-justify px-4 sm:px-0 mb-4">
                       <RichText document={datamap.fields.productSection3 || ""} />
                     </div>
                     <div className="pt-2 px-4 sm:px-0 text-center">

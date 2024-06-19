@@ -57,7 +57,7 @@ function CompanyHistory() {
                 <p className="text-base lg:text-2xl pb-4 text-black font-BakbakOne tracking-widest">
                   {datamap.fields.companyHistoryTitle}
                 </p>
-                <div className="text-sm lg:text-base text-gray-900 leading-7 text-justify">
+                <div className="text-sm lg:text-base text-gray-900 lg:leading-7 text-justify">
                   <RichText document={datamap.fields.companyHistoryText} />
                 </div>
               </div>
