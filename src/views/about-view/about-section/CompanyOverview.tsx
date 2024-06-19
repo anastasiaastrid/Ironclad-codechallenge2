@@ -46,7 +46,7 @@ function CompanyOverview() {
             >
               <div className="flex justify-center col-span-1 mx-auto">
                 <Image
-                  className="rounded-md h-2/5 w-2/5 lg:h-3/5 lg:w-3/5 mx-auto"
+                  className="rounded-md h-2/4 w-2/4 lg:h-3/5 lg:w-3/5 mx-auto"
                   alt="Company Overview Image"
                   // @ts-ignore
                   src={`https:${datamap.fields.companyOverviewImage.fields.file.url}`}
