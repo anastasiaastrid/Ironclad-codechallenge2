@@ -44,7 +44,7 @@ function CompanyHistory() {
             >
               <div className="flex justify-center col-span-1 mx-auto">
                 <Image
-                  className="rounded-md h-2/3 w-2/3 lg:h-3/5 lg:w-3/5 mx-auto"
+                  className="rounded-md h-2/5 w-2/5 lg:h-3/5 lg:w-3/5 mx-auto"
                   alt="Company History Image"
                   // @ts-ignore
                   src={`https:${datamap.fields.companyHistoryImage.fields.file.url}`}
