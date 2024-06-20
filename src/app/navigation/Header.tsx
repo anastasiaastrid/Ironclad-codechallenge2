@@ -47,22 +47,22 @@ function Header() {
       {/* Menu */}
       <nav className={`lg:flex lg:items-center lg:space-x-4 ${isOpen ? "block" : "hidden"}`}>
         <Link href="/" onClick={toggleMenu}>
-          <div className="text-white font-BakbakOne tracking-wide flex items-center hover:underline hover:text-white cursor-pointer py-2">
+          <div className="text-white lg:text-base text-sm font-BakbakOne tracking-wide flex items-center hover:underline hover:text-white cursor-pointer py-2">
             HOME
           </div>
         </Link>
         <Link href="/product" onClick={toggleMenu}>
-          <div className="text-white font-BakbakOne tracking-wide flex items-center hover:underline hover:text-white cursor-pointer py-2">
+          <div className="text-white lg:text-base text-sm font-BakbakOne tracking-wide flex items-center hover:underline hover:text-white cursor-pointer py-2">
             PRODUCTS
           </div>
         </Link>
         <Link href="/about" onClick={toggleMenu}>
-          <div className="text-white font-BakbakOne tracking-wide flex items-center hover:underline hover:text-white cursor-pointer py-2">
+          <div className="text-white lg:text-base text-sm font-BakbakOne tracking-wide flex items-center hover:underline hover:text-white cursor-pointer py-2">
             ABOUT
           </div>
         </Link>
         <Link href="/team" onClick={toggleMenu}>
-          <div className="text-white font-BakbakOne tracking-wide flex items-center hover:underline hover:text-white cursor-pointer py-2">
+          <div className="text-white lg:text-base text-sm font-BakbakOne tracking-wide flex items-center hover:underline hover:text-white cursor-pointer py-2">
             TEAM
           </div>
         </Link>
