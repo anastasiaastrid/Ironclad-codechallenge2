@@ -72,8 +72,8 @@ const TestimonialsPage: React.FC = () => {
                       className="rounded-full w-24 h-24 mb-4 object-cover"
                       loading="lazy"
                     />
-                    <p className="text-sm text-gray-900 leading-6 text-center mb-2">{testimonial.testimonial}</p>
-                    <p className="text-sm text-gray-700 font-semibold">{testimonial.name}</p>
+                    <p className="text-xs lg:text-sm text-gray-900 leading-6 text-center mb-2">{testimonial.testimonial}</p>
+                    <p className="text-xs lg:text-sm text-gray-700 font-semibold">{testimonial.name}</p>
                   </div>
                 ))}
           </div>

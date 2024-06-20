@@ -73,7 +73,7 @@ function SignatureEdition() {
                     </div>
                     <div className="pt-2 px-4 sm:px-0 text-center">
                       <Link href="/product/">
-                        <button className="text-sm lg:text-base px-4 py-2 font-bold text-black rounded-full bg-white">
+                        <button className="text-xs lg:text-base px-4 py-2 font-bold text-black rounded-full bg-white">
                           Shop Now
                         </button>
                       </Link>
@@ -103,7 +103,7 @@ function SignatureEdition() {
                     </div>
                     <div className="pt-2 px-4 sm:px-0 text-center">
                       <Link href="/product/">
-                        <button className="text-sm lg:text-base px-4 py-2 font-bold text-black rounded-full bg-white">
+                        <button className="text-xs lg:text-base px-4 py-2 font-bold text-black rounded-full bg-white">
                           Shop Now
                         </button>
                       </Link>
@@ -133,7 +133,7 @@ function SignatureEdition() {
                     </div>
                     <div className="pt-2 px-4 sm:px-0 text-center">
                       <Link href="/product/">
-                        <button className="text-sm lg:text-base px-4 py-2 font-bold text-black rounded-full bg-white">
+                        <button className="text-xs lg:text-base px-4 py-2 font-bold text-black rounded-full bg-white">
                           Shop Now
                         </button>
                       </Link>

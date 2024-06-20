@@ -56,7 +56,7 @@ function HeroSection() {
               </div>
               <div className="w-1/2 pt-4 lg:pt-6">
                 <Link href="/product/">
-                  <button className="text-sm lg:text-lg px-4 py-2 font-bold text-black rounded-full bg-white">
+                  <button className="text-xs lg:text-lg px-4 py-2 font-bold text-black rounded-full bg-white">
                     Shop Now
                   </button>
                 </Link>
