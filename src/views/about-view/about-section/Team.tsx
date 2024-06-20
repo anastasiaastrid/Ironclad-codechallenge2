@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { NextPage } from "next";
 import Head from "next/head";
 import { useEffect, useState } from "react";
@@ -48,7 +48,10 @@ const TeamPage: NextPage = () => {
     <div className="flex flex-col items-center justify-center min-h-screen py-2 px-4 sm:px-8 md:px-16 lg:px-32">
       <Head>
         <title>Ironclad Watch Team</title>
+        <link rel="preload" href="/fonts/ZenDots-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
+        <link rel="preload" href="/fonts/BakbakOne-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
       </Head>
+
       <h1 className="text-3xl font-bold mb-10">Meet Our Team</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

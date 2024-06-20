@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
 import Header from "./navigation/Header";
 import Footer from "./navigation/Footer";
-import { Inter } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Ironclad Watches - Timeless Toughness",
@@ -22,7 +19,7 @@ export default function RootLayout({
         <link rel="icon" href="/static/logo/favicon.png" />
       </head>
 
-      <body className={inter.className}>
+      <body>
         <Header />
         {children}
         <Footer />

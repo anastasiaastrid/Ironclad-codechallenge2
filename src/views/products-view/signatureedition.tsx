@@ -64,7 +64,7 @@ function SignatureEdition() {
                         loading="lazy"
                       />
                     </div>
-                    <p className="text-base lg:text-xl text-gray-200 font-ZenDots pt-4 text-center lg:pt-8 mb-4">
+                    <p className="text-sm lg:text-xl text-gray-200 font-ZenDots pt-4 text-center lg:pt-8 mb-4">
                       {/* @ts-ignore */}
                       {datamap.fields.titleProductSection1}
                     </p>
@@ -73,7 +73,7 @@ function SignatureEdition() {
                     </div>
                     <div className="pt-2 px-4 sm:px-0 text-center">
                       <Link href="/product/">
-                        <button className="px-4 py-2 font-bold text-black rounded-full bg-white">Shop Now</button>
+                        <button className="text-sm lg:text-base px-4 py-2 font-bold text-black rounded-full bg-white">Shop Now</button>
                       </Link>
                     </div>
                   </div>
@@ -92,7 +92,7 @@ function SignatureEdition() {
                         loading="lazy"
                       />
                     </div>
-                    <p className="text-base lg:text-xl text-gray-200 font-ZenDots pt-4 text-center lg:pt-8 mb-4">
+                    <p className="text-sm lg:text-xl text-gray-200 font-ZenDots pt-4 text-center lg:pt-8 mb-4">
                       {/* @ts-ignore */}
                       {datamap.fields.titleProductSection2}
                     </p>
@@ -101,7 +101,7 @@ function SignatureEdition() {
                     </div>
                     <div className="pt-2 px-4 sm:px-0 text-center">
                       <Link href="/product/">
-                        <button className="px-4 py-2 font-bold text-black rounded-full bg-white">Shop Now</button>
+                        <button className="text-sm lg:text-base px-4 py-2 font-bold text-black rounded-full bg-white">Shop Now</button>
                       </Link>
                     </div>
                   </div>
@@ -120,7 +120,7 @@ function SignatureEdition() {
                         loading="lazy"
                       />
                     </div>
-                    <p className="text-base lg:text-xl text-gray-200 font-ZenDots pt-4 text-center lg:pt-8 mb-4">
+                    <p className="text-sm lg:text-xl text-gray-200 font-ZenDots pt-4 text-center lg:pt-8 mb-4">
                       {/* @ts-ignore */}
                       {datamap.fields.titleProductSection3}
                     </p>
@@ -129,7 +129,7 @@ function SignatureEdition() {
                     </div>
                     <div className="pt-2 px-4 sm:px-0 text-center">
                       <Link href="/product/">
-                        <button className="px-4 py-2 font-bold text-black rounded-full bg-white">Shop Now</button>
+                        <button className="text-sm lg:text-base px-4 py-2 font-bold text-black rounded-full bg-white">Shop Now</button>
                       </Link>
                     </div>
                   </div>

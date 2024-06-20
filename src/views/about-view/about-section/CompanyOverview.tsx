@@ -31,6 +31,7 @@ function CompanyOverview() {
         <link rel="preload" href="/fonts/ZenDots-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
         <link rel="preload" href="/fonts/BakbakOne-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
       </Head>
+
       {showContent && (
         <div className="max-w-full max-h-full mx-auto my-auto py-5 px-4 sm:px-6">
           {data?.map((datamap) => (

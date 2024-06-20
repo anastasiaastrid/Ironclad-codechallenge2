@@ -1,4 +1,5 @@
 "use client";
+import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
@@ -9,13 +10,19 @@ function Footer() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowFooter(true);
-    }, 7000);
+    }, 4000);
 
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <>
+      <Head>
+        <title>Ironclad Watch</title>
+        <link rel="preload" href="/fonts/ZenDots-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
+        <link rel="preload" href="/fonts/BakbakOne-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
+      </Head>
+
       {showFooter && (
         <footer className="bg-neutral-950 text-white max-w-full max-h-full mx-auto my-auto py-5 px-4 sm:px-6">
           <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">

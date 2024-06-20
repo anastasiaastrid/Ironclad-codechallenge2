@@ -7,6 +7,8 @@ import Head from "next/head";
 
 <Head>
   <title>Ironclad Watch</title>
+  <link rel="preload" href="/fonts/ZenDots-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
+  <link rel="preload" href="/fonts/BakbakOne-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
 </Head>;
 
 function HomeView() {
@@ -14,7 +16,7 @@ function HomeView() {
     <div>
       <HeroSection />
       <CompanyOverview />
-      <SignatureEdition/>
+      <SignatureEdition />
       <CompanyHistory />
       <TestimonialsPage />
     </div>
