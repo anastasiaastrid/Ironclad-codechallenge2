@@ -1,77 +1,81 @@
 "use client";
-import { NextPage } from "next";
-import Head from "next/head";
 import { useEffect, useState } from "react";
+import Head from "next/head";
+import { Testimonial } from "@/type/testimonial";
 
-interface RandomUser {
-  name: {
-    first: string;
-    last: string;
-  };
-  email: string;
-  picture: {
-    large: string;
-  };
-}
-
-const TeamPage: NextPage = () => {
-  const [teamMembers, setTeamMembers] = useState<RandomUser[]>([]);
+const TestimonialsPage: React.FC = () => {
+  const [testimonials, setTestimonials] = useState<Testimonial[]>([]);
+  const [isLoadingTestimonials, setIsLoadingTestimonials] = useState(true);
+  const [showTestimonials, setShowTestimonials] = useState(false);
 
   useEffect(() => {
-    const fetchTeamMembers = async () => {
+    const fetchTestimonials = async () => {
       try {
-        const res = await fetch("https://randomuser.me/api/?results=3");
-        const data = await res.json();
-        setTeamMembers(data.results);
+        const response = await fetch("https://randomuser.me/api/?results=3");
+        if (!response.ok) {
+          throw new Error("Failed to fetch testimonials");
+        }
+        const data = await response.json();
+        const results = data.results;
+        const jobTitles = ["CEO", "Watch Designer", "Marketing Manager"]; // Define specific job titles
+        const fetchedTestimonials: Testimonial[] = results.map((result: any, index: number) => ({
+          name: `${result.name.first} ${result.name.last}`,
+          picture: result.picture.large,
+          testimonial: jobTitles[index % jobTitles.length], // Assign specific job titles based on index
+        }));
+        setTestimonials(fetchedTestimonials);
       } catch (error) {
-        console.error("Error fetching team members:", error);
+        console.error("Error fetching testimonials:", error);
+      } finally {
+        setIsLoadingTestimonials(false);
+        setShowTestimonials(true);
       }
     };
 
-    fetchTeamMembers();
+    fetchTestimonials();
   }, []);
 
-  const getJobTitle = (index: number): string => {
-    switch (index) {
-      case 0:
-        return "CEO";
-      case 1:
-        return "Watch Designer";
-      case 2:
-        return "Marketing";
-      default:
-        return "Team Member";
-    }
-  };
-
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2 px-4 sm:px-8 md:px-16 lg:px-32">
+    <div className="max-w-full mx-auto my-14 py-5 px-4 sm:px-6">
       <Head>
-        <title>Ironclad Watch Team</title>
+        <title>Ironclad Team</title>
         <link rel="preload" href="/fonts/ZenDots-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
         <link rel="preload" href="/fonts/BakbakOne-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
       </Head>
 
-      <h1 className="text-3xl font-bold mb-10">Meet Our Team</h1>
-
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {teamMembers.map((member, index) => (
-          <div key={index} className="flex flex-col items-center space-y-4">
-            <img
-              src={member.picture.large}
-              alt={`Avatar of ${member.name.first} ${member.name.last}`}
-              className="w-24 h-24 rounded-full"
-            />
-            <div className="text-center">
-              <p className="font-semibold">{`${member.name.first} ${member.name.last}`}</p>
-              <p className="text-gray-500">{member.email}</p>
-              <p className="text-gray-500">{getJobTitle(index)}</p>
-            </div>
+      {showTestimonials && (
+        <>
+          <h1 className="text-base w-auto lg:text-2xl text-center mb-5 text-black font-BakbakOne tracking-widest">
+            Our Team
+          </h1>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-9 lg:px-24">
+            {isLoadingTestimonials
+              ? Array.from({ length: 3 }).map((_, index) => (
+                  <div key={index} className="border rounded-lg p-4 flex flex-col items-center">
+                    <div className="rounded-full w-24 h-24 mb-4 bg-gray-200"></div>
+                    <div className="w-full h-6 bg-gray-200 mb-2"></div>
+                    <div className="w-1/2 h-6 bg-gray-200"></div>
+                  </div>
+                ))
+              : testimonials.map((testimonial, index) => (
+                  <div key={index} className="border rounded-lg p-4 flex flex-col items-center">
+                    <img
+                      src={testimonial.picture}
+                      alt={testimonial.name}
+                      className="rounded-full w-24 h-24 mb-4 object-cover"
+                      loading="lazy"
+                    />
+                    <p className="text-xs lg:text-sm text-gray-900 leading-6 text-center mb-2">
+                      {testimonial.testimonial}
+                    </p>
+                    <p className="text-xs lg:text-sm text-gray-700 font-semibold">{testimonial.name}</p>
+                  </div>
+                ))}
           </div>
-        ))}
-      </div>
+        </>
+      )}
     </div>
   );
 };
 
-export default TeamPage;
+export default TestimonialsPage;

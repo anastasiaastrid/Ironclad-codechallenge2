@@ -27,6 +27,9 @@ export interface TypeBlogFields {
     companyHistoryImage: Asset;
     companyHistoryTitle: EntryFields.Symbol;
     companyHistoryText: EntryFields.RichText;
+    cultureImages: Asset;
+    cultureTitle: EntryFields.Symbol;
+    cultureText: EntryFields.RichText;
   };
 }
 

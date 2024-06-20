@@ -4,6 +4,7 @@ import SignatureEdition from "../products-view/signatureedition";
 import CompanyHistory from "../about-view/about-section/CompanyHistory";
 import TestimonialsPage from "./home-section/TestimonialSection";
 import Head from "next/head";
+import CompanyCulture from "../about-view/about-section/CompanyCulture";
 
 <Head>
   <title>Ironclad Watch</title>
@@ -18,6 +19,7 @@ function HomeView() {
       <CompanyOverview />
       <SignatureEdition />
       <CompanyHistory />
+      <CompanyCulture />
       <TestimonialsPage />
     </div>
   );
