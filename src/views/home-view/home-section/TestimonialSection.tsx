@@ -54,7 +54,7 @@ const TestimonialsPage: React.FC = () => {
 
       {showTestimonials && (
         <>
-          <h1 className="text-xs w-auto lg:text-3xl font-bold text-center mb-8 text-black">Ironclad Wearers</h1>
+          <h1 className="text-sm w-auto lg:text-3xl font-bold text-center mb-8 text-black">Ironclad Wearers</h1>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {isLoadingTestimonials
               ? Array.from({ length: 3 }).map((_, index) => (
