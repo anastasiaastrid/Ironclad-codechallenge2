@@ -27,7 +27,7 @@ function SignatureEdition() {
   }, []);
 
   return (
-    <div className="bg-white min-h-full w-full">
+    <div className="bg-white min-w-full">
       <Head>
         <title>Ironclad Watch Signature Edition Products</title>
         <link rel="preload" href="/fonts/ZenDots-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
@@ -62,7 +62,6 @@ function SignatureEdition() {
                         layout="fill"
                         objectFit="cover"
                         loading="lazy"
-                        placeholder="blur"
                       />
                     </div>
                     <p className="text-sm lg:text-xl text-gray-200 font-ZenDots pt-4 text-center lg:pt-8 mb-4">
@@ -93,7 +92,6 @@ function SignatureEdition() {
                         layout="fill"
                         objectFit="cover"
                         loading="lazy"
-                        placeholder="blur"
                       />
                     </div>
                     <p className="text-sm lg:text-xl text-gray-200 font-ZenDots pt-4 text-center lg:pt-8 mb-4">
@@ -124,7 +122,6 @@ function SignatureEdition() {
                         layout="fill"
                         objectFit="cover"
                         loading="lazy"
-                        placeholder="blur"
                       />
                     </div>
                     <p className="text-sm lg:text-xl text-gray-200 font-ZenDots pt-4 text-center lg:pt-8 mb-4">

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState, useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
@@ -25,7 +25,7 @@ function CompanyOverview() {
   }, []);
 
   return (
-    <div className="bg-white">
+    <div className="bg-white min-w-full">
       <Head>
         <title>Ironclad Watch Company Overview</title>
         <link rel="preload" href="/fonts/ZenDots-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
@@ -36,7 +36,11 @@ function CompanyOverview() {
         <div className="max-w-full mx-auto py-5 px-4 sm:px-6">
           {data?.map((datamap) => (
             // @ts-ignore
-            <div key={datamap.sys.id} className="grid grid-cols-1 gap-4 py-5 px-7 items-center md:grid-cols-1 lg:grid-cols-3">
+            <div
+            // @ts-ignore
+              key={datamap.sys.id}
+              className="grid grid-cols-1 gap-4 py-5 px-7 items-center md:grid-cols-1 lg:grid-cols-3"
+            >
               <div className="flex justify-center col-span-1 mx-auto">
                 <Image
                   className="rounded-md h-2/4 w-2/4 lg:h-3/5 lg:w-3/5 mx-auto"
@@ -45,7 +49,6 @@ function CompanyOverview() {
                   src={`https:${datamap.fields.companyOverviewImage.fields.file.url}`}
                   width={374}
                   height={441}
-                  placeholder="blur"
                 />
               </div>
               <div className="col-span-2 text-center md:text-left lg:ml-8 mt-5 lg:mt-0">

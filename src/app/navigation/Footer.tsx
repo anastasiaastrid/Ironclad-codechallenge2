@@ -29,6 +29,7 @@ function Footer() {
             <Link href="/">
               <div className="flex items-center space-x-2 cursor-pointer">
                 <Image src="/static/logo/ironcladwatcheslogo-01-white-01-01.png" alt="Logo" width={50} height={50} />
+                <div className=" text-xs mt-4">© 2024 Ironclad Watch - Astrid Code Challenge</div>
               </div>
             </Link>
             <nav className="flex flex-wrap justify-center md:justify-end gap-x-6 mt-4 md:mt-0">

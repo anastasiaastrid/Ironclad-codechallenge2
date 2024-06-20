@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState, useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
@@ -25,9 +25,9 @@ function CompanyHistory() {
   }, []);
 
   return (
-    <div className="bg-white">
+    <div className="bg-white min-w-full">
       <Head>
-        <title>Ironclad Watch Company History</title>
+        <title>Ironclad Watch Company Overview</title>
         <link rel="preload" href="/fonts/ZenDots-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
         <link rel="preload" href="/fonts/BakbakOne-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
       </Head>
@@ -36,20 +36,20 @@ function CompanyHistory() {
         <div className="max-w-full mx-auto py-5 px-4 sm:px-6">
           {data?.map((datamap) => (
             // @ts-ignore
-            <div key={datamap.sys.id} className="grid grid-cols-1 gap-4 py-5 px-7 items-center md:grid-cols-1 lg:grid-cols-3">
-              <div className="flex justify-center mx-auto">
-                <div className="rounded-md overflow-hidden h-72 w-72 lg:h-96 lg:w-96">
-                  <Image
-                    className="object-cover object-center"
-                    alt="Company History Image"
-                    //  @ts-ignore
-                    src={`https:${datamap.fields.companyHistoryImage.fields.file.url}`}
-                    width={600}
-                    height={600}
-                    layout="responsive"
-                    placeholder="blur"
-                  />
-                </div>
+            <div
+            // @ts-ignore
+              key={datamap.sys.id}
+              className="grid grid-cols-1 gap-4 py-5 px-7 items-center md:grid-cols-1 lg:grid-cols-3"
+            >
+              <div className="flex justify-center col-span-1 mx-auto">
+                <Image
+                  className="rounded-md h-2/4 w-2/4 lg:h-3/5 lg:w-3/5 mx-auto"
+                  alt="Company Overview Image"
+                  //  @ts-ignore
+                  src={`https:${datamap.fields.companyHistoryImage.fields.file.url}`}
+                  width={374}
+                  height={441}
+                />
               </div>
               <div className="col-span-2 text-center md:text-left lg:ml-8 mt-5 lg:mt-0">
                 <p className="text-2xl lg:text-5xl text-black font-ZenDots">{datamap.fields.title}</p>
