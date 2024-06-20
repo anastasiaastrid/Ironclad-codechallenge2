@@ -37,7 +37,9 @@ const Team: React.FC = () => {
 
   return (
     <div className="max-w-full max-h-full mx-auto my-auto py-5 px-4 sm:px-6">
-      <h1 className="text-3xl font-bold text-center mb-8 text-black font-BakbakOne">Ironclad Wearers</h1>
+      <h1 className="text-xs w-min h-min lg:text-3xl font-bold text-center mb-8 text-black font-BakbakOne">
+        Ironclad Wearers
+      </h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {testimonials.map((testimonial, index) => (
           <div key={index} className="border rounded-lg p-4 flex flex-col items-center">
