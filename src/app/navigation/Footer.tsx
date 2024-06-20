@@ -10,7 +10,7 @@ function Footer() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowFooter(true);
-    }, 4000);
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, []);

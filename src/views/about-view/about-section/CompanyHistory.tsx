@@ -37,7 +37,7 @@ function CompanyHistory() {
           {data?.map((datamap) => (
             // @ts-ignore
             <div
-            // @ts-ignore
+              // @ts-ignore
               key={datamap.sys.id}
               className="grid grid-cols-1 gap-4 py-5 px-7 items-center md:grid-cols-1 lg:grid-cols-3"
             >
