@@ -54,7 +54,7 @@ const TestimonialsPage: React.FC = () => {
 
       {showTestimonials && (
         <>
-          <h1 className="text-sm w-auto lg:text-3xl font-bold text-center mb-8 text-black">Ironclad Wearers</h1>
+          <h1 className="text-base w-auto lg:text-3xl font-bold text-center mb-8 text-black">Ironclad Wearers</h1>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {isLoadingTestimonials
               ? Array.from({ length: 3 }).map((_, index) => (
@@ -72,7 +72,9 @@ const TestimonialsPage: React.FC = () => {
                       className="rounded-full w-24 h-24 mb-4 object-cover"
                       loading="lazy"
                     />
-                    <p className="text-xs lg:text-sm text-gray-900 leading-6 text-center mb-2">{testimonial.testimonial}</p>
+                    <p className="text-xs lg:text-sm text-gray-900 leading-6 text-center mb-2">
+                      {testimonial.testimonial}
+                    </p>
                     <p className="text-xs lg:text-sm text-gray-700 font-semibold">{testimonial.name}</p>
                   </div>
                 ))}
